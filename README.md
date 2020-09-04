@@ -1,2 +1,2 @@
 # Simple Chatty Bot
-JetBrains Academy里，Kotlin Developerᵝ路径的第一个项目。
+[JetBrains Academy](https://hyperskill.org/tracks)里，[Kotlin Developerᵝ](https://hyperskill.org/tracks/3)路径的第一个项目。
