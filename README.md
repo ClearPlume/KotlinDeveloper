@@ -1,6 +1,4 @@
-# KotlinDeveloper
-JetBrains Academy里，Kotlin Developerᵝ路径的代码练习。其中有12个项目，因此以分支的形式管理它们。
+# Simple Chatty Bot
+[JetBrains Academy](https://hyperskill.org/tracks)里，[Kotlin Developerᵝ](https://hyperskill.org/tracks/3)路径的第一个项目。
 
-[在这里](https://blog.csdn.net/putao2062/article/details/80516001)发现这种技巧。
-
-# 第一个项目：[SimpleChattyBot]()
+# 回到[首页](https://github.com/ClearPlume/KotlinDeveloper/tree/master)。
