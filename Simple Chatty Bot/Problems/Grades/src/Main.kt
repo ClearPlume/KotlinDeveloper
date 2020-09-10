@@ -2,6 +2,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
+
     val gradeNum = scanner.nextInt()
     var a = 0
     var b = 0

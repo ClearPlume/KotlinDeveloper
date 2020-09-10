@@ -2,6 +2,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
+
     val partsNum = scanner.nextInt()
     var readyNum = 0
     var fixNum = 0

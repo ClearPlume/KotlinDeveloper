@@ -2,6 +2,7 @@ import java.util.Scanner
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
+
     var num = 0
 
     while (scanner.hasNext()) {

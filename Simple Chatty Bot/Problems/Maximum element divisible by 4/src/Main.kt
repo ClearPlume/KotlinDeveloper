@@ -2,6 +2,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
+
     val inputNum = scanner.nextInt()
     var maxInput = 0
 
