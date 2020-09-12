@@ -1,0 +1,22 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun main() {
+        /*
+        println("three!")
+        // println("two!")
+        println("one!")
+        // println("go!")
+        */
+        println("go!")
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/4408
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/4408">JetBrains
+    Academy</a></html>
+  time: Sat, 12 Sep 2020 07:53:59 UTC
+record: -1
