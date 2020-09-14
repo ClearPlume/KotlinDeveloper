@@ -5,29 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874b3ff-2efb-4854-b8a0-0948b50fa39e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,19 +86,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -110,6 +96,7 @@
       <updated>1600048673939</updated>
       <workItem from="1600048676957" duration="79000" />
       <workItem from="1600048877058" duration="1535000" />
+      <workItem from="1600051737665" duration="98000" />
     </task>
     <servers />
   </component>
