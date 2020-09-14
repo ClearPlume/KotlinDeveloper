@@ -5,28 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874b3ff-2efb-4854-b8a0-0948b50fa39e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task2Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_61.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +120,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -83,8 +129,39 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="ASCII_Text_Signature.Problems-Initializing_an_array.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -97,6 +174,9 @@
       <workItem from="1600048676957" duration="79000" />
       <workItem from="1600048877058" duration="1535000" />
       <workItem from="1600051737665" duration="98000" />
+      <workItem from="1600052597268" duration="4352000" />
+      <workItem from="1600064356814" duration="342000" />
+      <workItem from="1600064906351" duration="1646000" />
     </task>
     <servers />
   </component>
@@ -104,9 +184,49 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="164" key="SettingsEditor" timestamp="1600049471537">
+    <state x="567" y="192" key="#Gradle" timestamp="1600064363358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600049471537" />
+    <state x="567" y="192" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1600064363358" />
+    <state x="782" y="260" key="FileChooserDialogImpl" timestamp="1600052794006">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600052794006" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1600064335456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1600064335456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1600064335455">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335455" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1600064335456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1600064335457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335457" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1600064335456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1600064335456">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1600064335457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335457" />
+    <state x="302" y="205" width="1082" height="712" key="SettingsEditor" timestamp="1600065454584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="302" y="205" width="1082" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600065454584" />
   </component>
 </project>
