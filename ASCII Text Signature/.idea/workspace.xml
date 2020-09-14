@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3874b3ff-2efb-4854-b8a0-0948b50fa39e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="13" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="13" />
+  </component>
+  <component name="ProjectId" id="1hTx2DBtSxD5Mo3NyIts2zPE9Aj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
+    <property name="show.inlinked.gradle.project.popup" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3874b3ff-2efb-4854-b8a0-0948b50fa39e" name="Default Changelist" comment="" />
+      <created>1600048673939</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600048673939</updated>
+      <workItem from="1600048676957" duration="79000" />
+      <workItem from="1600048877058" duration="1535000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1600049471537">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600049471537" />
+  </component>
+</project>
