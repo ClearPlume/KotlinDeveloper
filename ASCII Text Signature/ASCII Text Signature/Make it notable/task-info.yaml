@@ -1,15 +1,6 @@
 type: edu
 custom_name: stage3
 files:
-- name: src/signature/Main.kt
-  visible: true
-  text: |
-    package signature
-
-    fun main() {
-        println("Hello, World!")
-    }
-  learner_created: false
 - name: test/GeneratorTest.java
   visible: false
   text: |
@@ -256,6 +247,19 @@ files:
         return framed(centeredLines(lines))
     }
   learner_created: false
+- name: src/signature/Main.kt
+  visible: true
+  text: |
+    package signature
+
+    fun main() {
+        println("Hello, World!")
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/71/stages/392/implement
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/71/stages/392/implement">JetBrains
+    Academy</a>
+  time: Thu, 24 Sep 2020 00:56:54 UTC
 record: -1

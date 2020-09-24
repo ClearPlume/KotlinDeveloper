@@ -12,7 +12,7 @@ stages:
   is_completed: true
 - id: 392
   step: 6175
-  is_completed: false
+  is_completed: true
 - id: 393
   step: 6176
   is_completed: false
@@ -45,6 +45,8 @@ topics:
     theory_id: 4472
   - title: Boolean and logical operations
     theory_id: 4515
+  - title: Increment and decrement
+    theory_id: 10776
   - title: Invoking functions
     theory_id: 4575
   - title: Standard input

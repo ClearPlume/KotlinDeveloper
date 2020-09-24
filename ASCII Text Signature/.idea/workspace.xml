@@ -5,72 +5,542 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3874b3ff-2efb-4854-b8a0-0948b50fa39e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task2Test.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of characters/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of integers/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array of longs/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Initializing an array/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/src/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/Swap elements/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Problems/lesson-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hyperskill_hs_test_release_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A simple calculator/ASCII_Text_Signature.Problems-A_simple_calculator.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A simple calculator/ASCII_Text_Signature.Problems-A_simple_calculator.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A simple calculator/ASCII_Text_Signature.Problems-A_simple_calculator.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A small version of the Battleship game/ASCII_Text_Signature.Problems-A_small_version_of_the_Battleship_game.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A small version of the Battleship game/ASCII_Text_Signature.Problems-A_small_version_of_the_Battleship_game.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/A small version of the Battleship game/ASCII_Text_Signature.Problems-A_small_version_of_the_Battleship_game.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Arithmetic expression/ASCII_Text_Signature.Problems-Arithmetic_expression.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Arithmetic expression/ASCII_Text_Signature.Problems-Arithmetic_expression.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Arithmetic expression/ASCII_Text_Signature.Problems-Arithmetic_expression.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Balance checker/ASCII_Text_Signature.Problems-Balance_checker.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Balance checker/ASCII_Text_Signature.Problems-Balance_checker.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Balance checker/ASCII_Text_Signature.Problems-Balance_checker.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Beyond the word/ASCII_Text_Signature.Problems-Beyond_the_word.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Beyond the word/ASCII_Text_Signature.Problems-Beyond_the_word.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Beyond the word/ASCII_Text_Signature.Problems-Beyond_the_word.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Case insensitive/ASCII_Text_Signature.Problems-Case_insensitive.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Case insensitive/ASCII_Text_Signature.Problems-Case_insensitive.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Case insensitive/ASCII_Text_Signature.Problems-Case_insensitive.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Check the numbers/ASCII_Text_Signature.Problems-Check_the_numbers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Check the numbers/ASCII_Text_Signature.Problems-Check_the_numbers.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Check the numbers/ASCII_Text_Signature.Problems-Check_the_numbers.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Collatz conjecture/ASCII_Text_Signature.Problems-Collatz_conjecture.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Collatz conjecture/ASCII_Text_Signature.Problems-Collatz_conjecture.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Collatz conjecture/ASCII_Text_Signature.Problems-Collatz_conjecture.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Compression algorithm/ASCII_Text_Signature.Problems-Compression_algorithm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Compression algorithm/ASCII_Text_Signature.Problems-Compression_algorithm.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Compression algorithm/ASCII_Text_Signature.Problems-Compression_algorithm.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/ASCII_Text_Signature.Problems-Convert_a_date.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/ASCII_Text_Signature.Problems-Convert_a_date.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Convert a date/ASCII_Text_Signature.Problems-Convert_a_date.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Counting/ASCII_Text_Signature.Problems-Counting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Counting/ASCII_Text_Signature.Problems-Counting.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Counting/ASCII_Text_Signature.Problems-Counting.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Create a euphonious word/ASCII_Text_Signature.Problems-Create_a_euphonious_word.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Create a euphonious word/ASCII_Text_Signature.Problems-Create_a_euphonious_word.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Create a euphonious word/ASCII_Text_Signature.Problems-Create_a_euphonious_word.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cutting out the middle of a string/ASCII_Text_Signature.Problems-Cutting_out_the_middle_of_a_string.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cutting out the middle of a string/ASCII_Text_Signature.Problems-Cutting_out_the_middle_of_a_string.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cutting out the middle of a string/ASCII_Text_Signature.Problems-Cutting_out_the_middle_of_a_string.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cyclically shifting elements/ASCII_Text_Signature.Problems-Cyclically_shifting_elements.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cyclically shifting elements/ASCII_Text_Signature.Problems-Cyclically_shifting_elements.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Cyclically shifting elements/ASCII_Text_Signature.Problems-Cyclically_shifting_elements.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Date and time formatting/ASCII_Text_Signature.Problems-Date_and_time_formatting.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Date and time formatting/ASCII_Text_Signature.Problems-Date_and_time_formatting.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Date and time formatting/ASCII_Text_Signature.Problems-Date_and_time_formatting.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Direction/ASCII_Text_Signature.Problems-Direction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Direction/ASCII_Text_Signature.Problems-Direction.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Direction/ASCII_Text_Signature.Problems-Direction.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Double characters/ASCII_Text_Signature.Problems-Double_characters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Double characters/ASCII_Text_Signature.Problems-Double_characters.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Double characters/ASCII_Text_Signature.Problems-Double_characters.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/FTN-Numbers/ASCII_Text_Signature.Problems-FTN-Numbers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/FTN-Numbers/ASCII_Text_Signature.Problems-FTN-Numbers.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/FTN-Numbers/ASCII_Text_Signature.Problems-FTN-Numbers.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the first occurrence of the word  the/ASCII_Text_Signature.Problems-Find_the_first_occurrence_of_the_word__the.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the first occurrence of the word  the/ASCII_Text_Signature.Problems-Find_the_first_occurrence_of_the_word__the.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the first occurrence of the word  the/ASCII_Text_Signature.Problems-Find_the_first_occurrence_of_the_word__the.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the max/ASCII_Text_Signature.Problems-Find_the_max.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the max/ASCII_Text_Signature.Problems-Find_the_max.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Find the max/ASCII_Text_Signature.Problems-Find_the_max.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/First digit/ASCII_Text_Signature.Problems-First_digit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/First digit/ASCII_Text_Signature.Problems-First_digit.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/First digit/ASCII_Text_Signature.Problems-First_digit.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Floor-space of the room/ASCII_Text_Signature.Problems-Floor-space_of_the_room.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Floor-space of the room/ASCII_Text_Signature.Problems-Floor-space_of_the_room.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Floor-space of the room/ASCII_Text_Signature.Problems-Floor-space_of_the_room.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/From string to a number/ASCII_Text_Signature.Problems-From_string_to_a_number.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/From string to a number/ASCII_Text_Signature.Problems-From_string_to_a_number.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/From string to a number/ASCII_Text_Signature.Problems-From_string_to_a_number.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/ASCII_Text_Signature.Problems-Generating_passwords.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/ASCII_Text_Signature.Problems-Generating_passwords.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Generating passwords/ASCII_Text_Signature.Problems-Generating_passwords.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Getting letters from the Alphabet/ASCII_Text_Signature.Problems-Getting_letters_from_the_Alphabet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Getting letters from the Alphabet/ASCII_Text_Signature.Problems-Getting_letters_from_the_Alphabet.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Getting letters from the Alphabet/ASCII_Text_Signature.Problems-Getting_letters_from_the_Alphabet.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Harry Potter/ASCII_Text_Signature.Problems-Harry_Potter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Harry Potter/ASCII_Text_Signature.Problems-Harry_Potter.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Harry Potter/ASCII_Text_Signature.Problems-Harry_Potter.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Individual taxes/ASCII_Text_Signature.Problems-Individual_taxes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Individual taxes/ASCII_Text_Signature.Problems-Individual_taxes.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Individual taxes/ASCII_Text_Signature.Problems-Individual_taxes.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/ASCII_Text_Signature.Problems-Is_it_here.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/ASCII_Text_Signature.Problems-Is_it_here.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Is it here/ASCII_Text_Signature.Problems-Is_it_here.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking (1)/ASCII_Text_Signature.Problems-Just_checking__1_.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking (1)/ASCII_Text_Signature.Problems-Just_checking__1_.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking (1)/ASCII_Text_Signature.Problems-Just_checking__1_.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking/ASCII_Text_Signature.Problems-Just_checking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking/ASCII_Text_Signature.Problems-Just_checking.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Just checking/ASCII_Text_Signature.Problems-Just_checking.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Lucky number/ASCII_Text_Signature.Problems-Lucky_number.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Lucky number/ASCII_Text_Signature.Problems-Lucky_number.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Lucky number/ASCII_Text_Signature.Problems-Lucky_number.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/ASCII_Text_Signature.Problems-Move_the_first_N_characters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/ASCII_Text_Signature.Problems-Move_the_first_N_characters.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Move the first N characters/ASCII_Text_Signature.Problems-Move_the_first_N_characters.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/N-th symbol/ASCII_Text_Signature.Problems-N-th_symbol.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/N-th symbol/ASCII_Text_Signature.Problems-N-th_symbol.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/N-th symbol/ASCII_Text_Signature.Problems-N-th_symbol.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Number of occurrences/ASCII_Text_Signature.Problems-Number_of_occurrences.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Number of occurrences/ASCII_Text_Signature.Problems-Number_of_occurrences.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Number of occurrences/ASCII_Text_Signature.Problems-Number_of_occurrences.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/ASCII_Text_Signature.Problems-Palindrome.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/ASCII_Text_Signature.Problems-Palindrome.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Palindrome/ASCII_Text_Signature.Problems-Palindrome.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Parse url/ASCII_Text_Signature.Problems-Parse_url.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Parse url/ASCII_Text_Signature.Problems-Parse_url.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Parse url/ASCII_Text_Signature.Problems-Parse_url.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/ASCII_Text_Signature.Problems-Piece_of_alphabet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/ASCII_Text_Signature.Problems-Piece_of_alphabet.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Piece of alphabet/ASCII_Text_Signature.Problems-Piece_of_alphabet.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Print two numbers on the same line/ASCII_Text_Signature.Problems-Print_two_numbers_on_the_same_line.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Print two numbers on the same line/ASCII_Text_Signature.Problems-Print_two_numbers_on_the_same_line.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Print two numbers on the same line/ASCII_Text_Signature.Problems-Print_two_numbers_on_the_same_line.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Right Rotation/ASCII_Text_Signature.Problems-Right_Rotation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Right Rotation/ASCII_Text_Signature.Problems-Right_Rotation.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Right Rotation/ASCII_Text_Signature.Problems-Right_Rotation.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Shape/ASCII_Text_Signature.Problems-Shape.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Shape/ASCII_Text_Signature.Problems-Shape.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Shape/ASCII_Text_Signature.Problems-Shape.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Squares of natural numbers/ASCII_Text_Signature.Problems-Squares_of_natural_numbers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Squares of natural numbers/ASCII_Text_Signature.Problems-Squares_of_natural_numbers.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Squares of natural numbers/ASCII_Text_Signature.Problems-Squares_of_natural_numbers.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/String processor/ASCII_Text_Signature.Problems-String_processor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/String processor/ASCII_Text_Signature.Problems-String_processor.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/String processor/ASCII_Text_Signature.Problems-String_processor.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The army of units/ASCII_Text_Signature.Problems-The_army_of_units.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The army of units/ASCII_Text_Signature.Problems-The_army_of_units.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The army of units/ASCII_Text_Signature.Problems-The_army_of_units.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The first position of the largest element/ASCII_Text_Signature.Problems-The_first_position_of_the_largest_element.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The first position of the largest element/ASCII_Text_Signature.Problems-The_first_position_of_the_largest_element.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The first position of the largest element/ASCII_Text_Signature.Problems-The_first_position_of_the_largest_element.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The information about a person/ASCII_Text_Signature.Problems-The_information_about_a_person.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The information about a person/ASCII_Text_Signature.Problems-The_information_about_a_person.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The information about a person/ASCII_Text_Signature.Problems-The_information_about_a_person.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The largest element/ASCII_Text_Signature.Problems-The_largest_element.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The largest element/ASCII_Text_Signature.Problems-The_largest_element.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The largest element/ASCII_Text_Signature.Problems-The_largest_element.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The length of the sequence/ASCII_Text_Signature.Problems-The_length_of_the_sequence.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The length of the sequence/ASCII_Text_Signature.Problems-The_length_of_the_sequence.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The length of the sequence/ASCII_Text_Signature.Problems-The_length_of_the_sequence.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/ASCII_Text_Signature.Problems-The_longest_word.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/ASCII_Text_Signature.Problems-The_longest_word.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The longest word/ASCII_Text_Signature.Problems-The_longest_word.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/ASCII_Text_Signature.Problems-The_lucky_ticket.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/ASCII_Text_Signature.Problems-The_lucky_ticket.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The lucky ticket/ASCII_Text_Signature.Problems-The_lucky_ticket.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The number of digits/ASCII_Text_Signature.Problems-The_number_of_digits.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The number of digits/ASCII_Text_Signature.Problems-The_number_of_digits.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The number of digits/ASCII_Text_Signature.Problems-The_number_of_digits.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The percentage of G and C characters/ASCII_Text_Signature.Problems-The_percentage_of_G_and_C_characters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The percentage of G and C characters/ASCII_Text_Signature.Problems-The_percentage_of_G_and_C_characters.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The percentage of G and C characters/ASCII_Text_Signature.Problems-The_percentage_of_G_and_C_characters.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sequence 1 2 2 3 3 3/ASCII_Text_Signature.Problems-The_sequence_1_2_2_3_3_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sequence 1 2 2 3 3 3/ASCII_Text_Signature.Problems-The_sequence_1_2_2_3_3_3.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sequence 1 2 2 3 3 3/ASCII_Text_Signature.Problems-The_sequence_1_2_2_3_3_3.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/ASCII_Text_Signature.Problems-The_sum_of_elements.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/ASCII_Text_Signature.Problems-The_sum_of_elements.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/The sum of elements/ASCII_Text_Signature.Problems-The_sum_of_elements.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Triples/ASCII_Text_Signature.Problems-Triples.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Triples/ASCII_Text_Signature.Problems-Triples.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Triples/ASCII_Text_Signature.Problems-Triples.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Unique characters/ASCII_Text_Signature.Problems-Unique_characters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Unique characters/ASCII_Text_Signature.Problems-Unique_characters.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Unique characters/ASCII_Text_Signature.Problems-Unique_characters.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Authors.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task3Test.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A simple calculator/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A simple calculator/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A simple calculator/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A simple calculator/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A small version of the Battleship game/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A small version of the Battleship game/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A small version of the Battleship game/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/A small version of the Battleship game/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Arithmetic expression/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Arithmetic expression/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Arithmetic expression/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Arithmetic expression/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Balance checker/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Balance checker/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Balance checker/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Balance checker/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Beyond the word/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Beyond the word/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Beyond the word/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Beyond the word/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Case insensitive/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Case insensitive/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Case insensitive/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Case insensitive/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Check the numbers/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Check the numbers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Check the numbers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Check the numbers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Collatz conjecture/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Collatz conjecture/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Collatz conjecture/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Collatz conjecture/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Compression algorithm/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Compression algorithm/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Compression algorithm/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Compression algorithm/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Convert a date/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Convert a date/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Convert a date/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Convert a date/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Counting/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Counting/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Counting/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Counting/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Create a euphonious word/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Create a euphonious word/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Create a euphonious word/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Create a euphonious word/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cutting out the middle of a string/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cutting out the middle of a string/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cutting out the middle of a string/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cutting out the middle of a string/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cyclically shifting elements/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cyclically shifting elements/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cyclically shifting elements/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Cyclically shifting elements/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Date and time formatting/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Date and time formatting/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Date and time formatting/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Date and time formatting/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Direction/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Direction/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Direction/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Direction/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Double characters/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Double characters/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Double characters/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Double characters/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/FTN-Numbers/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/FTN-Numbers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/FTN-Numbers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/FTN-Numbers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the first occurrence of the word  the/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the first occurrence of the word  the/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the first occurrence of the word  the/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the first occurrence of the word  the/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the max/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the max/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the max/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Find the max/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/First digit/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/First digit/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/First digit/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/First digit/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Floor-space of the room/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Floor-space of the room/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Floor-space of the room/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Floor-space of the room/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/From string to a number/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/From string to a number/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/From string to a number/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/From string to a number/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Generating passwords/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Generating passwords/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Generating passwords/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Generating passwords/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Getting letters from the Alphabet/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Getting letters from the Alphabet/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Getting letters from the Alphabet/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Getting letters from the Alphabet/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Harry Potter/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Harry Potter/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Harry Potter/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Harry Potter/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Individual taxes/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Individual taxes/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Individual taxes/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Individual taxes/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Is it here/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Is it here/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Is it here/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Is it here/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking (1)/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking (1)/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking (1)/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking (1)/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Just checking/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Lucky number/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Lucky number/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Lucky number/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Lucky number/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Move the first N characters/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Move the first N characters/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Move the first N characters/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Move the first N characters/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/N-th symbol/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/N-th symbol/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/N-th symbol/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/N-th symbol/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Number of occurrences/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Number of occurrences/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Number of occurrences/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Number of occurrences/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Palindrome/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Palindrome/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Palindrome/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Palindrome/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Parse url/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Parse url/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Parse url/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Parse url/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Piece of alphabet/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Piece of alphabet/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Piece of alphabet/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Piece of alphabet/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Print two numbers on the same line/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Print two numbers on the same line/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Print two numbers on the same line/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Print two numbers on the same line/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Right Rotation/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Right Rotation/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Right Rotation/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Right Rotation/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Shape/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Shape/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Shape/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Shape/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Squares of natural numbers/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Squares of natural numbers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Squares of natural numbers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Squares of natural numbers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/String processor/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/String processor/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/String processor/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/String processor/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The army of units/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The army of units/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The army of units/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The army of units/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The first position of the largest element/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The first position of the largest element/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The first position of the largest element/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The first position of the largest element/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The information about a person/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The information about a person/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The information about a person/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The information about a person/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The largest element/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The largest element/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The largest element/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The largest element/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The length of the sequence/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The length of the sequence/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The length of the sequence/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The length of the sequence/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The longest word/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The longest word/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The longest word/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The longest word/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The lucky ticket/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The lucky ticket/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The lucky ticket/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The lucky ticket/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The number of digits/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The number of digits/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The number of digits/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The number of digits/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The percentage of G and C characters/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The percentage of G and C characters/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The percentage of G and C characters/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The percentage of G and C characters/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sequence 1 2 2 3 3 3/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sequence 1 2 2 3 3 3/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sequence 1 2 2 3 3 3/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sequence 1 2 2 3 3 3/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sum of elements/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sum of elements/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sum of elements/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/The sum of elements/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Triples/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Triples/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Triples/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Triples/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Unique characters/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Unique characters/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Unique characters/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Unique characters/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_72.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_61.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hyperskill_hs_test_v7_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_3_61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_61.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_3_61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_3_61.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_10.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/ASCII Text Signature/task/ASCII_Text_Signature.ASCII_Text_Signature-task.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of characters/ASCII_Text_Signature.Problems-Initializing_an_array_of_characters.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of integers/ASCII_Text_Signature.Problems-Initializing_an_array_of_integers.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array of longs/ASCII_Text_Signature.Problems-Initializing_an_array_of_longs.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Initializing an array/ASCII_Text_Signature.Problems-Initializing_an_array.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Problems/Swap elements/ASCII_Text_Signature.Problems-Swap_elements.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/util/ASCII_Text_Signature.util.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/ASCII New Roman/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Make it notable/task-remote-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Primitive Art/task-remote-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/Star quality/task-remote-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/main/META-INF/ASCII_Text_Signature-task.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/main/META-INF/ASCII_Text_Signature-task.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/main/signature/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/main/signature/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/test/META-INF/ASCII_Text_Signature-task.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/test/META-INF/ASCII_Text_Signature-task.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/test/TestCaseHelpersKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/classes/kotlin/test/TestCaseHelpersKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/package-parts.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/kotlin/compileTestKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/GeneratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task1Test.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ASCII Text Signature/task/test/TestCaseHelpers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASCII Text Signature/task/test/Task2Test.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Problems/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Problems/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +571,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="D:/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -129,6 +600,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14469914" />
+    <property name="project.structure.side.proportion" value="0.27150086" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
@@ -145,13 +619,13 @@
       </method>
     </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="ASCII_Text_Signature.Problems-Initializing_an_array.main" />
+      <module name="ASCII_Text_Signature.ASCII_Text_Signature-task.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="MainKt" />
+      <option name="MAIN_CLASS_NAME" value="signature.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,57 +650,128 @@
       <workItem from="1600051737665" duration="98000" />
       <workItem from="1600052597268" duration="4352000" />
       <workItem from="1600064356814" duration="342000" />
-      <workItem from="1600064906351" duration="1646000" />
+      <workItem from="1600064906351" duration="33504000" />
+      <workItem from="1600347581892" duration="6285000" />
+      <workItem from="1600399710569" duration="10111000" />
+      <workItem from="1600416853827" duration="21000" />
+      <workItem from="1600520616148" duration="136000" />
+      <workItem from="1600651468795" duration="664000" />
+      <workItem from="1600674704373" duration="13792000" />
+      <workItem from="1600695199498" duration="22912000" />
+      <workItem from="1600770155461" duration="13575000" />
     </task>
+    <task id="LOCAL-00001" summary="第二项目AsciiTextSignature，第一阶段 Primitive Art in ASCII Text Signature 、第二阶段 Star quality in ASCII Text Signature 完成。">
+      <created>1600067561456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600067561456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第二项目AsciiTextSignature，第一阶段 Primitive Art in ASCII Text Signature 、第二阶段 Star quality in ASCII Text Signature 完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第二项目AsciiTextSignature，第一阶段 Primitive Art in ASCII Text Signature 、第二阶段 Star quality in ASCII Text Signature 完成。" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="567" y="192" key="#Gradle" timestamp="1600064363358">
+    <state x="567" y="192" key="#Gradle" timestamp="1600520636359">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="192" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1600064363358" />
-    <state x="782" y="260" key="FileChooserDialogImpl" timestamp="1600052794006">
+    <state x="567" y="192" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1600520636359" />
+    <state x="359" y="235" width="1092" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600763080078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="782" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600052794006" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1600064335456">
+    <state x="359" y="235" width="1092" height="764" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600763080078" />
+    <state x="730" y="362" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1600389337986">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1600064335456">
+    <state x="730" y="362" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600389337986" />
+    <state x="215" y="118" key="CommitChangelistDialog2" timestamp="1600067555447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1600064335455">
+    <state x="215" y="118" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600067555447" />
+    <state width="418" height="466" key="DebuggerActiveHint" timestamp="1600169721463">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335455" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1600064335456">
+    <state width="418" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1600169721463" />
+    <state x="782" y="260" key="FileChooserDialogImpl" timestamp="1600520725527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1600064335457">
+    <state x="782" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600520725527" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1600908891097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335457" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1600064335456">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1600908891097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1600064335456">
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1600908891096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335456" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1600064335457">
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891096" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1600908891097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600064335457" />
-    <state x="302" y="205" width="1082" height="712" key="SettingsEditor" timestamp="1600065454584">
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1600908891097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="302" y="205" width="1082" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600065454584" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1600908891097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1600908891097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1600908891097">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600908891097" />
+    <state x="455" y="163" width="1082" height="712" key="SettingsEditor" timestamp="1600770293038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="455" y="163" width="1082" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600770293038" />
+    <state x="813" y="231" key="VCS.ChangeListViewerDialog" timestamp="1600778843675">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="813" y="231" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600778843675" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1600067569283">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1600067569283" />
+    <state x="492" y="255" width="936" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600744068993">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="492" y="255" width="936" height="642" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1600744068993" />
+    <state x="334" y="129" key="new project wizard" timestamp="1600137007485">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="129" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1600137007485" />
+    <state x="800" y="290" key="refactoring.ChangeSignatureDialog" timestamp="1600779761823">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="800" y="290" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600779761823" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/ASCII Text Signature/task/src/signature/Main.kt</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
