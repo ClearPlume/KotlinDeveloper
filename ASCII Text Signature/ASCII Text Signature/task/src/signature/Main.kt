@@ -1,15 +1,16 @@
 package signature
 
+import java.io.File
 import java.util.*
 import kotlin.math.max
 
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    val name = getNameStr(scanner.nextLine().toUpperCase())
-    val status = scanner.nextLine()
+    val name = getStr(scanner.nextLine(), "roman")
+    val status = getStr(scanner.nextLine(), "medium")
     val nameLength = name[0].length
-    val statusLength = status.length
+    val statusLength = status[0].length
     val nameSpace: Int
     val statusSpace: Int
     val exceedLength: Int
@@ -27,192 +28,84 @@ fun main() {
         0
     }
 
-    // 6 is the "*  " at the beginning and "  *" at the end of the line
-    println("*".repeat(max(nameLength, statusLength) + 6))
+    // 8 is the "88  " at the beginning and "  88" at the end of the line.
+    println("8".repeat(max(nameLength, statusLength) + 8))
     if (nameLength > statusLength) {
-        printName(name, nameSpace)
-        printStatus(status, statusSpace, exceedLength)
+        printStr(name, nameSpace)
+        printStr(status, statusSpace, exceedLength)
     } else {
-        printName(name, nameSpace, exceedLength)
-        printStatus(status, statusSpace)
+        printStr(name, nameSpace, exceedLength)
+        printStr(status, statusSpace)
     }
-    print("*".repeat(max(nameLength, statusLength) + 6))
+    print("8".repeat(max(nameLength, statusLength) + 8))
 }
 
-fun printStatus(status: String, spaces: Int, exceedLength: Int = 0) {
-    print("*  ")
-    print(" ".repeat(spaces / 2))
-    print(status)
-    print(" ".repeat(spaces / 2 + exceedLength))
-    println("  *")
-}
-
-fun printName(name: Array<String>, spaces: Int, exceedLength: Int = 0) {
+fun printStr(name: Array<String>, spaces: Int, exceedLength: Int = 0) {
     for (s in name) {
-        print("*  ")
+        print("88  ")
         print(" ".repeat(spaces / 2))
         print(s)
         print(" ".repeat(spaces / 2 + exceedLength))
-        println("  *")
+        println("  88")
     }
 }
 
-fun getNameStr(name: String): Array<String> {
-    return arrayOf(
-            getNameSingleLine(name, 0),
-            getNameSingleLine(name, 1),
-            getNameSingleLine(name, 2)
-    )
+fun getStr(str: String, font: String): Array<String> {
+    val array = Array(if (font == "medium") 3 else 10) { "" }
+    for (i in array.indices) {
+        array[i] = getStrSingleLine(font, str, i)
+    }
+    return array
 }
 
-fun getNameSingleLine(name: String, lineNum: Int): String {
+fun getStrSingleLine(font: String, str: String, lineNum: Int): String {
     var tmp = ""
 
-    for (i in name.indices) {
-        val charIndex: Int = if (name[i] == ' ') 26 else (name[i] - 65).toInt()
-        tmp += letters[charIndex][lineNum]
-
-        if (i < name.lastIndex) {
-            tmp += ' '
+    for (i in str.indices) {
+        tmp += if (str[i] == ' ') {
+            if (font == "medium") "     " else "          "
+        } else {
+            val charIndex = if (str[i] in 'a'..'z') (str[i] - 97).toInt() else (str[i] - 65 + 26).toInt()
+            (if (font == "medium") mediums else romans)!![charIndex][lineNum]
         }
     }
     return tmp
 }
 
-val letters = arrayOf(
-        arrayOf(
-                "____",
-                "|__|",
-                "|  |"
-        ),
-        arrayOf(
-                "___ ",
-                "|__]",
-                "|__]"
-        ),
-        arrayOf(
-                "____",
-                "|   ",
-                "|___"
-        ),
-        arrayOf(
-                "___ ",
-                "|  \\",
-                "|__/"
-        ),
-        arrayOf(
-                "____",
-                "|___",
-                "|___",
-        ),
-        arrayOf(
-                "____",
-                "|___",
-                "|   "
-        ),
-        arrayOf(
-                "____",
-                "| __",
-                "|__]"
-        ),
-        arrayOf(
-                "_  _",
-                "|__|",
-                "|  |"
-        ),
-        arrayOf(
-                "_",
-                "|",
-                "|"
-        ),
-        arrayOf(
-                " _",
-                " |",
-                "_|"
-        ),
-        arrayOf(
-                "_  _",
-                "|_/ ",
-                "| \\_"
-        ),
-        arrayOf(
-                "_   ",
-                "|   ",
-                "|___"
-        ),
-        arrayOf(
-                "_  _",
-                "|\\/|",
-                "|  |"
-        ),
-        arrayOf(
-                "_  _",
-                "|\\ |",
-                "| \\|"
-        ),
-        arrayOf(
-                "____",
-                "|  |",
-                "|__|"
-        ),
-        arrayOf(
-                "___ ",
-                "|__]",
-                "|   "
-        ),
-        arrayOf(
-                "____",
-                "|  |",
-                "|_\\|"
-        ),
-        arrayOf(
-                "____",
-                "|__/",
-                "|  \\"
-        ),
-        arrayOf(
-                "____",
-                "[__ ",
-                "___]"
-        ),
-        arrayOf(
-                "___",
-                " | ",
-                " | "
-        ),
-        arrayOf(
-                "_  _",
-                "|  |",
-                "|__|"
-        ),
-        arrayOf(
-                "_  _",
-                "|  |",
-                " \\/ "
-        ),
-        arrayOf(
-                "_ _ _",
-                "| | |",
-                "|_|_|"
-        ),
-        arrayOf(
-                "_  _",
-                " \\/ ",
-                "_/\\_"
-        ),
-        arrayOf(
-                "_   _",
-                " \\_/ ",
-                "  |  "
-        ),
-        arrayOf(
-                "___ ",
-                "  / ",
-                " /__"
-        ),
-        arrayOf(
-                "    ",
-                "    ",
-                "    "
-        )
-)
+var romansInitialized = false
+var romans: Array<Array<String>>? = null
+    get() {
+        return if (romansInitialized) {
+            field
+        } else {
+            fill("roman")
+        }
+    }
+
+var mediumsInitialized = false
+var mediums: Array<Array<String>>? = null
+    get() {
+        return if (mediumsInitialized) {
+            field
+        } else {
+            fill("medium")
+        }
+    }
+
+fun fill(fontName: String): Array<Array<String>> {
+    val scanner = Scanner(File("C:/fonts/$fontName.txt"))
+    val fontInfo = scanner.nextLine().split(' ')
+    val fontHeight = fontInfo[0].toInt()
+    val letterNum = fontInfo[1].toInt()
+    val fonts = Array(letterNum) { Array(fontHeight) { "" } }
+
+    for (i in 0 until letterNum) {
+        val letterWidth = scanner.nextLine().split(' ')[1].toInt()
+
+        for (j in 0 until fontHeight) {
+            fonts[i][j] = scanner.nextLine().substring(0, letterWidth)
+        }
+    }
+
+    return fonts
+}
