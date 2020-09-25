@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55332f47-eae9-4d16-90e0-e2eec21f3734" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Battle!/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Flexible mines/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Look around you/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +88,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper.Minesweeper-task.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="minesweeper.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,12 +121,24 @@
       <workItem from="1601001810797" duration="345000" />
       <workItem from="1601004769181" duration="678000" />
       <workItem from="1601013921424" duration="101000" />
-      <workItem from="1601040251531" duration="472000" />
+      <workItem from="1601040251531" duration="1260000" />
     </task>
+    <task id="LOCAL-00001" summary="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。">
+      <created>1601040969428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601040969428</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="192" key="#Gradle" timestamp="1601040274446">
@@ -126,6 +149,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601002093232" />
+    <state x="365" y="89" key="CommitChangelistDialog2" timestamp="1601040965198">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="365" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601040965198" />
     <state x="649" y="260" key="FileChooserDialogImpl" timestamp="1601001953204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -134,5 +161,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="65" y="39" width="1050" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601040263058" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1601040988222">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601040988222" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1601041523937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1601041523937" />
   </component>
 </project>
