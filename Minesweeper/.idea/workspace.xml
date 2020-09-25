@@ -5,80 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55332f47-eae9-4d16-90e0-e2eec21f3734" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.6.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_cedarsoftware_json_io_4_10_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_hyperskill_hs_test_release_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_stefanbirkner_system_rules_1_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_core_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_assertj_assertj_swing_junit_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_reflect_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_easytesting_fest_util_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Minesweeper.util.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Minesweeper.util.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/util/Minesweeper.util.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Battle!/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Battle!/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Flexible mines/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Look around you/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Prepare for battle/task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +74,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.inlinked.gradle.project.popup" value="false" />
   </component>
@@ -159,6 +108,9 @@
       <workItem from="1600998255279" duration="119000" />
       <workItem from="1601001596614" duration="120000" />
       <workItem from="1601001810797" duration="345000" />
+      <workItem from="1601004769181" duration="678000" />
+      <workItem from="1601013921424" duration="101000" />
+      <workItem from="1601040251531" duration="472000" />
     </task>
     <servers />
   </component>
@@ -166,6 +118,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="567" y="192" key="#Gradle" timestamp="1601040274446">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="192" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1601040274446" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601002093232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -174,9 +130,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="649" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601001953204" />
-    <state x="344" y="164" width="1050" height="712" key="SettingsEditor" timestamp="1601002144565">
+    <state x="65" y="39" width="1050" height="712" key="SettingsEditor" timestamp="1601040263058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="344" y="164" width="1050" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601002144565" />
+    <state x="65" y="39" width="1050" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601040263058" />
   </component>
 </project>
