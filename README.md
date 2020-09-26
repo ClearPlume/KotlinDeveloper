@@ -4,3 +4,5 @@
 ## 第一项目：[SimpleChattyBot](https://github.com/ClearPlume/KotlinDeveloper/tree/SimpleChattyBot)
 
 ## 第二项目：[ASCIITextSignature](https://github.com/ClearPlume/KotlinDeveloper/tree/AsciiTextSignature)
+
+## 第三项目：[Minesweeper](https://github.com/ClearPlume/KotlinDeveloper/tree/Minesweeper)
