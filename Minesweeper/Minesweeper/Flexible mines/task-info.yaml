@@ -1,15 +1,6 @@
 type: edu
 custom_name: stage2
 files:
-- name: src/minesweeper/Main.kt
-  visible: true
-  text: |
-    package minesweeper
-
-    fun main() {
-        print("Hello, World!")
-    }
-  learner_created: false
 - name: test/MinesweeperTest.java
   visible: false
   text: |
@@ -93,10 +84,19 @@ files:
         }
     }
   learner_created: false
+- name: src/minesweeper/Main.kt
+  visible: true
+  text: |
+    package minesweeper
+
+    fun main() {
+        print("Hello, World!")
+    }
+  learner_created: false
 feedback_link: https://hyperskill.org/projects/8/stages/47/implement
 status: Solved
 feedback:
   message: Congratulations! Continue on <a href="https://hyperskill.org/projects/8/stages/47/implement">JetBrains
     Academy</a>
   time: Fri, 25 Sep 2020 13:46:12 UTC
-record: -1
+record: 2

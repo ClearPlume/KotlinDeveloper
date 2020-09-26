@@ -5,16 +5,210 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55332f47-eae9-4d16-90e0-e2eec21f3734" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Application as a class/Minesweeper.Problems-Application_as_a_class.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Application as a class/Minesweeper.Problems-Application_as_a_class.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Application as a class/Minesweeper.Problems-Application_as_a_class.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Area printer/Minesweeper.Problems-Area_printer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Area printer/Minesweeper.Problems-Area_printer.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Area printer/Minesweeper.Problems-Area_printer.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Minesweeper.Problems-Bank_account.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Minesweeper.Problems-Bank_account.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Bank account/Minesweeper.Problems-Bank_account.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Car/Minesweeper.Problems-Car.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Car/Minesweeper.Problems-Car.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Car/Minesweeper.Problems-Car.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/City population/Minesweeper.Problems-City_population.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/City population/Minesweeper.Problems-City_population.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/City population/Minesweeper.Problems-City_population.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Complex numbers/Minesweeper.Problems-Complex_numbers.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Complex numbers/Minesweeper.Problems-Complex_numbers.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Complex numbers/Minesweeper.Problems-Complex_numbers.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Composition/Minesweeper.Problems-Composition.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Composition/Minesweeper.Problems-Composition.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Composition/Minesweeper.Problems-Composition.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Constructor property/Minesweeper.Problems-Constructor_property.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Constructor property/Minesweeper.Problems-Constructor_property.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Constructor property/Minesweeper.Problems-Constructor_property.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Delegation/Minesweeper.Problems-Delegation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Delegation/Minesweeper.Problems-Delegation.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Delegation/Minesweeper.Problems-Delegation.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fridge/Minesweeper.Problems-Fridge.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fridge/Minesweeper.Problems-Fridge.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Fridge/Minesweeper.Problems-Fridge.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Last digit/Minesweeper.Problems-Last_digit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Last digit/Minesweeper.Problems-Last_digit.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Last digit/Minesweeper.Problems-Last_digit.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Patient needs a doctor/Minesweeper.Problems-Patient_needs_a_doctor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Patient needs a doctor/Minesweeper.Problems-Patient_needs_a_doctor.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Patient needs a doctor/Minesweeper.Problems-Patient_needs_a_doctor.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pets/Minesweeper.Problems-Pets.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pets/Minesweeper.Problems-Pets.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pets/Minesweeper.Problems-Pets.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Playing with time/Minesweeper.Problems-Playing_with_time.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Playing with time/Minesweeper.Problems-Playing_with_time.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Playing with time/Minesweeper.Problems-Playing_with_time.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Point2D/Minesweeper.Problems-Point2D.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Point2D/Minesweeper.Problems-Point2D.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Point2D/Minesweeper.Problems-Point2D.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pseudo-constructor/Minesweeper.Problems-Pseudo-constructor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pseudo-constructor/Minesweeper.Problems-Pseudo-constructor.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Pseudo-constructor/Minesweeper.Problems-Pseudo-constructor.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Reddit/Minesweeper.Problems-Reddit.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Reddit/Minesweeper.Problems-Reddit.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Reddit/Minesweeper.Problems-Reddit.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Strings as objects/Minesweeper.Problems-Strings_as_objects.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Strings as objects/Minesweeper.Problems-Strings_as_objects.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Strings as objects/Minesweeper.Problems-Strings_as_objects.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Volume of a cube/Minesweeper.Problems-Volume_of_a_cube.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Volume of a cube/Minesweeper.Problems-Volume_of_a_cube.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Volume of a cube/Minesweeper.Problems-Volume_of_a_cube.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Weather comparison/Minesweeper.Problems-Weather_comparison.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Weather comparison/Minesweeper.Problems-Weather_comparison.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Problems/Weather comparison/Minesweeper.Problems-Weather_comparison.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/MineField.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Application as a class/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Application as a class/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Application as a class/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Application as a class/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Area printer/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Area printer/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Area printer/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Area printer/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Bank account/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Bank account/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Bank account/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Bank account/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Car/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Car/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Car/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Car/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/City population/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/City population/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/City population/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/City population/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Complex numbers/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Complex numbers/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Complex numbers/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Complex numbers/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Composition/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Composition/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Composition/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Composition/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Constructor property/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Constructor property/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Constructor property/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Constructor property/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Delegation/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Delegation/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Delegation/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Delegation/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Fridge/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Fridge/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Fridge/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Fridge/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Last digit/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Last digit/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Last digit/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Last digit/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Patient needs a doctor/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Patient needs a doctor/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Patient needs a doctor/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Patient needs a doctor/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pets/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pets/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pets/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pets/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Playing with time/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Playing with time/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Playing with time/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Playing with time/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Point2D/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Point2D/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Point2D/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Point2D/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pseudo-constructor/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pseudo-constructor/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pseudo-constructor/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Pseudo-constructor/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Reddit/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Reddit/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Reddit/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Reddit/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Strings as objects/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Strings as objects/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Strings as objects/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Strings as objects/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Volume of a cube/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Volume of a cube/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Volume of a cube/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Volume of a cube/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Weather comparison/src/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Weather comparison/task-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Weather comparison/task-remote-info.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/Weather comparison/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Problems/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageData" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/frameworkLessonHistory/storage.storageRecordIndex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Minesweeper/task/Minesweeper.Minesweeper-task.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Lay the groundwork/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Flexible mines/task-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/Look around you/task-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/Look around you/task-info.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/lesson-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/classes/java/test/MinesweeperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/classes/java/test/MinesweeperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/classes/kotlin/main/minesweeper/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/classes/kotlin/main/minesweeper/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileTestKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/kotlin/compileTestKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/classes/MinesweeperTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/classes/MinesweeperTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/TEST-MinesweeperTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/TEST-MinesweeperTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/out/production/classes/minesweeper/MainKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/src/minesweeper/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Minesweeper/task/test/MinesweeperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-info.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course-remote-info.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/course-remote-info.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +219,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -121,7 +322,11 @@
       <workItem from="1601001810797" duration="345000" />
       <workItem from="1601004769181" duration="678000" />
       <workItem from="1601013921424" duration="101000" />
-      <workItem from="1601040251531" duration="1260000" />
+      <workItem from="1601040251531" duration="11595000" />
+      <workItem from="1601101292444" duration="241000" />
+      <workItem from="1601101570207" duration="8035000" />
+      <workItem from="1601113874938" duration="155000" />
+      <workItem from="1601114085871" duration="8291000" />
     </task>
     <task id="LOCAL-00001" summary="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。">
       <created>1601040969428</created>
@@ -130,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601040969428</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第三项目 MineSweeper ，第二阶段 Flexible mines 完成。">
+      <created>1601041608536</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601041608536</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,33 +350,58 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三项目 MineSweeper ，第一阶段 Lay the groundwork in Minesweeper 完成。" />
+    <MESSAGE value="第三项目 MineSweeper ，第二阶段 Flexible mines 完成。" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三项目 MineSweeper ，第二阶段 Flexible mines 完成。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="192" key="#Gradle" timestamp="1601040274446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="567" y="192" key="#Gradle/0.0.1920.1040@0.0.1920.1040" timestamp="1601040274446" />
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601002093232">
+    <state x="408" y="155" key="#Plugins" timestamp="1601101633646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601002093232" />
-    <state x="365" y="89" key="CommitChangelistDialog2" timestamp="1601040965198">
+    <state x="408" y="155" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1601101633646" />
+    <state x="112" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601119814444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="365" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601040965198" />
+    <state x="112" y="245" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601119814444" />
+    <state x="577" y="197" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601092351915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="577" y="197" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601092351915" />
+    <state x="365" y="89" key="CommitChangelistDialog2" timestamp="1601041604110">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="365" y="89" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1601041604110" />
     <state x="649" y="260" key="FileChooserDialogImpl" timestamp="1601001953204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="649" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1601001953204" />
-    <state x="65" y="39" width="1050" height="712" key="SettingsEditor" timestamp="1601040263058">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1601122581945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="65" y="39" width="1050" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601040263058" />
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1601040988222">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601122581945" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1601122581945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601040988222" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601122581945" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1601122581945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601122581945" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1601122581945">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601122581945" />
+    <state x="354" y="179" width="1050" height="712" key="SettingsEditor" timestamp="1601115677470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="354" y="179" width="1050" height="712" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601115677470" />
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2" timestamp="1601041697111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1601041697111" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1601041523937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -14,6 +14,26 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Minesweeper/task" />
+            <option value="$PROJECT_DIR$/Problems/Application as a class" />
+            <option value="$PROJECT_DIR$/Problems/Area printer" />
+            <option value="$PROJECT_DIR$/Problems/Bank account" />
+            <option value="$PROJECT_DIR$/Problems/Car" />
+            <option value="$PROJECT_DIR$/Problems/City population" />
+            <option value="$PROJECT_DIR$/Problems/Complex numbers" />
+            <option value="$PROJECT_DIR$/Problems/Composition" />
+            <option value="$PROJECT_DIR$/Problems/Constructor property" />
+            <option value="$PROJECT_DIR$/Problems/Delegation" />
+            <option value="$PROJECT_DIR$/Problems/Fridge" />
+            <option value="$PROJECT_DIR$/Problems/Last digit" />
+            <option value="$PROJECT_DIR$/Problems/Patient needs a doctor" />
+            <option value="$PROJECT_DIR$/Problems/Pets" />
+            <option value="$PROJECT_DIR$/Problems/Playing with time" />
+            <option value="$PROJECT_DIR$/Problems/Point2D" />
+            <option value="$PROJECT_DIR$/Problems/Pseudo-constructor" />
+            <option value="$PROJECT_DIR$/Problems/Reddit" />
+            <option value="$PROJECT_DIR$/Problems/Strings as objects" />
+            <option value="$PROJECT_DIR$/Problems/Volume of a cube" />
+            <option value="$PROJECT_DIR$/Problems/Weather comparison" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>

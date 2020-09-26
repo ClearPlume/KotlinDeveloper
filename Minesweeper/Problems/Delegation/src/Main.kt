@@ -1,0 +1,1 @@
+fun Int.nextValue() = next(this)
