@@ -11,25 +11,40 @@ fun main() {
     mineField.showMineField()
 
     while (!mineField.isWin()) {
-        print("Set/delete mine marks (x and y coordinates):")
-        val playerInput = readLine()!!
-        val x = playerInput.split(' ')[0].toInt() - 1
-        val y = playerInput.split(' ')[1].toInt() - 1
+        print("Set/unset mines marks or claim a cell as free:")
+        val playerInputOriginal = readLine()!!
+        val playerInput = playerInputOriginal.split(' ')
+        val x = playerInput[0].toInt() - 1
+        val y = playerInput[1].toInt() - 1
 
         val cellSymbol = mineField.getCellSymbol(x, y)
 
-        when {
-            cellSymbol.isDigit() -> {
-                println("There is a number here!")
-                continue
-            }
-            cellSymbol == '.' -> {
-                mineField.setCellSymbol(x, y, '*')
-                mineField.showMineField()
-            }
-            else -> {
-                mineField.setCellSymbol(x, y, '.')
-                mineField.showMineField()
+        if (cellSymbol.isDigit()) {
+            println("There is a number here!")
+            continue
+        } else {
+            when (playerInput[2]) {
+                "mine" -> {
+                    when (cellSymbol) {
+                        '.' -> {
+                            mineField.setCellSymbol(x, y, '*')
+                            mineField.showMineField()
+                        }
+                        else -> {
+                            mineField.setCellSymbol(x, y, '.')
+                            mineField.showMineField()
+                        }
+                    }
+                }
+                "free" -> {
+                    if (cellSymbol == '.') {
+                        mineField.setCellSymbol(x, y, '/')
+                        mineField.showMineField()
+                    }
+                }
+                else -> {
+                    println("Error command!")
+                }
             }
         }
     }

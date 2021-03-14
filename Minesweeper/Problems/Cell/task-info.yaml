@@ -11,27 +11,8 @@ files:
     }
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/10704
-status: Failed
+status: Solved
 feedback:
-  message: |
-    Compilation error
-    main.kt:11:18: error: unresolved reference: height
-        println(cell.height)
-                     ^
-    main.kt:12:18: error: unresolved reference: width
-        println(cell.width)
-                     ^
-    main.kt:13:10: error: unresolved reference: height
-        cell.height = 50
-             ^
-    main.kt:14:18: error: unresolved reference: height
-        println(cell.height)
-                     ^
-    main.kt:15:10: error: unresolved reference: width
-        cell.width = 200
-             ^
-    main.kt:16:18: error: unresolved reference: width
-        println(cell.width)
-                     ^
-  time: Sun, 27 Sep 2020 00:58:42 UTC
+  message: <html>Correct solution</html>
+  time: Sun, 14 Mar 2021 10:11:43 UTC
 record: -1

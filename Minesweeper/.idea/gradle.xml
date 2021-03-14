@@ -6,10 +6,8 @@
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="GRADLE" />
-        <option name="distributionType" value="LOCAL" />
+        <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/Gralde/gradle-6.6.1-all" />
-        <option name="gradleJvm" value="java version &quot;11.0.8+10&quot;" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -19,6 +17,7 @@
             <option value="$PROJECT_DIR$/Problems/Bank account" />
             <option value="$PROJECT_DIR$/Problems/Blocks in a box" />
             <option value="$PROJECT_DIR$/Problems/Board game basics  Game" />
+            <option value="$PROJECT_DIR$/Problems/Board game basics  Player" />
             <option value="$PROJECT_DIR$/Problems/Car" />
             <option value="$PROJECT_DIR$/Problems/Cell" />
             <option value="$PROJECT_DIR$/Problems/City population" />
@@ -36,6 +35,7 @@
             <option value="$PROJECT_DIR$/Problems/Last digit" />
             <option value="$PROJECT_DIR$/Problems/Library" />
             <option value="$PROJECT_DIR$/Problems/Manager" />
+            <option value="$PROJECT_DIR$/Problems/Name Card" />
             <option value="$PROJECT_DIR$/Problems/Patient needs a doctor" />
             <option value="$PROJECT_DIR$/Problems/Pets" />
             <option value="$PROJECT_DIR$/Problems/Playing with time" />
