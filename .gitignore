@@ -1,3 +1,5 @@
-/Simple Chatty Bot
-/ASCII Text Signature
-/Minesweeper
+.gradle/
+.idea/
+gradle/
+build/
+out/
