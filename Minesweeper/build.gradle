@@ -1,9 +1,12 @@
 buildscript {
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
         mavenCentral()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.31"
     }
 }
 
@@ -12,17 +15,18 @@ subprojects {
     apply plugin: 'java'
     apply plugin: "kotlin"
 
-    sourceCompatibility = 1.8
+    sourceCompatibility = 15
 
     repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
         mavenCentral()
-        maven { url "https://jitpack.io" }
     }
 
     dependencies {
         compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-        implementation "org.jetbrains.kotlin:kotlin-reflect:1.4.10"
-        testImplementation 'com.github.hyperskill:hs-test:release-SNAPSHOT'
+        implementation "org.jetbrains.kotlin:kotlin-reflect:1.4.31"
     }
 
     configurations.all {
@@ -56,5 +60,5 @@ subprojects {
 }
 
 wrapper {
-    gradleVersion = '6.6.1'
+    gradleVersion = '6.8.3'
 }
