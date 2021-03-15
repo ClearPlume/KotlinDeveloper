@@ -23,13 +23,11 @@ d8(  888   888   888 888   .o8 888   888
 
 <p>The next lines contain information about the characters, one after another. The information about each character includes: this character, then the width of the character, and on the next lines, the way the character is represented in ASCII. Note that these fonts contain a column of spaces at the end of every symbol, so you don't need to add any.</p>
 
-<p>Don't worry, reading text from a file is as simple as reading from the console. You can use a scanner to do this, but instead of <code class="java">System.`in`</code>, pass <code class="java">File(pathToFont)</code> when creating a scanner. <strong>You should make sure to use an absolute path to avoid problems with checking.</strong> For example, use <code class="java">Scanner(File("C:/fonts/roman.txt"))</code> for the Roman font on Windows, or <code class="java">Scanner(File("/home/username/fonts/roman.txt"))</code> on Linux/MacOS systems.</p>
-
 <p>At this stage, you need to create a program that generates a name tag using the Roman font. It should also print the status of this person using the Medium font. The status of the person should be centered. When the length of the status is longer than the length of the full name, then the name and last name should be centered.</p>
 
-<h2 style="text-align: center;">Output examples</h2>
+<h2 style="text-align: center;">Examples</h2>
 
-<p>The examples are shown below:</p>
+<p><strong>Example 1:</strong></p>
 
 <pre><code class="language-no-highlight">Enter name and surname: Ian One
 Enter person's status: VIP
@@ -48,6 +46,8 @@ Enter person's status: VIP
 88                                |  | | |__]                                  88
 88                                 \/  | |                                     88
 888888888888888888888888888888888888888888888888888888888888888888888888888888888</code></pre>
+
+<p><strong>Example 2:</strong></p>
 
 <pre><code class="language-no-highlight">Enter name and surname: A b
 Enter person's status: long participant
