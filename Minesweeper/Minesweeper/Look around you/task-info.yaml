@@ -3,17 +3,36 @@ custom_name: stage3
 files:
 - name: src/minesweeper/Main.kt
   visible: true
-  text: |
+  text: |-
     package minesweeper
 
+    import java.util.*
+    import kotlin.random.Random
+
     fun main() {
-        print("Hello, World!")
+        print("How many mines do you want on the field?")
+        val numOfMines = Scanner(System.`in`).nextInt()
+        var curMineNum = 0
+        val field = Array(9) { CharArray(9) { '.' } }
+
+        while (curMineNum < numOfMines) {
+            val mineRow = Random.nextInt(9)
+            val mineCol = Random.nextInt(9)
+
+            if (field[mineRow][mineCol] != 'X') {
+                field[mineRow][mineCol] = 'X'
+                curMineNum++
+            }
+        }
+
+        for (f in field) {
+            println(f)
+        }
     }
   learner_created: false
 - name: test/MinesweeperTest.java
   visible: false
   text: |
-    import minesweeper.MainKt;
     import org.hyperskill.hstest.stage.StageTest;
     import org.hyperskill.hstest.testcase.CheckResult;
     import org.hyperskill.hstest.testcase.TestCase;
@@ -30,7 +49,7 @@ files:
                 int mines = i;
                 TestCase<Integer> test = new TestCase<Integer>()
                     .setDynamicTesting(() -> {
-                        TestedProgram main = new TestedProgram(MainKt.class);
+                        TestedProgram main = new TestedProgram();
                         main.start();
                         String output = main.execute("" + mines);
                         return test(output, mines);
@@ -142,13 +161,6 @@ files:
         }
     }
   learner_created: false
-- name: src/minesweeper/MineField.kt
-  visible: true
-  learner_created: true
-feedback_link: https://hyperskill.org/projects/8/stages/48/implement
+feedback_link: https://hyperskill.org/projects/8/stages/48/implement#comment
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/8/stages/48/implement">JetBrains
-    Academy</a>
-  time: Sat, 26 Sep 2020 12:16:41 UTC
 record: 3

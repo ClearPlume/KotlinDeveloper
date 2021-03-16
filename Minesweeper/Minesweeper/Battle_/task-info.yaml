@@ -1,19 +1,51 @@
 type: edu
-custom_name: stage5
+custom_name: Battle!
 files:
 - name: src/minesweeper/Main.kt
   visible: true
-  text: |
+  text: |-
     package minesweeper
 
     fun main() {
-        print("Hello, World!")
+        print("How many mines do you want on the field?")
+
+        val fieldSize = 9
+        val mineField = MineField(fieldSize, readLine()!!.toInt())
+
+        mineField.initial()
+        mineField.calcMineNum()
+        mineField.showMineField()
+
+        while (!mineField.isWin()) {
+            print("Set/delete mine marks (x and y coordinates):")
+            val playerInput = readLine()!!
+            val x = playerInput.split(' ')[0].toInt() - 1
+            val y = playerInput.split(' ')[1].toInt() - 1
+
+            val cellSymbol = mineField.getCellSymbol(x, y)
+
+            when {
+                cellSymbol.isDigit() -> {
+                    println("There is a number here!")
+                    continue
+                }
+                cellSymbol == '.' -> {
+                    mineField.setCellSymbol(x, y, '*')
+                    mineField.showMineField()
+                }
+                else -> {
+                    mineField.setCellSymbol(x, y, '.')
+                    mineField.showMineField()
+                }
+            }
+        }
+
+        mineField.win()
     }
   learner_created: false
 - name: test/MinesweeperTest.java
   visible: false
   text: |
-    import minesweeper.MainKt;
     import org.hyperskill.hstest.stage.StageTest;
     import org.hyperskill.hstest.testcase.CheckResult;
     import org.hyperskill.hstest.testcase.TestCase;
@@ -305,10 +337,6 @@ files:
 
     public class MinesweeperTest extends StageTest<State> {
 
-        public MinesweeperTest() {
-            super(MainKt.class);
-        }
-
         @Override
         public List<TestCase<State>> generate() {
             List<TestCase<State>> tests = new ArrayList<>();
@@ -462,6 +490,16 @@ files:
         public CheckResult check(String reply, State attach) {
             reply = reply.toLowerCase();
 
+            try {
+                List<Grid> grids = Grid.parse(reply);
+                if (grids.size() <= 1) {
+                    return CheckResult.wrong(
+                        "You should output at least 2 grids, found " + grids.size());
+                }
+            } catch (Exception ex) {
+                return CheckResult.wrong(ex.getMessage());
+            }
+
             boolean isFailed = reply.contains("failed");
             boolean isWin = reply.contains("congratulations");
 
@@ -479,221 +517,13 @@ files:
   learner_created: false
 - name: src/minesweeper/Cell.kt
   visible: true
-  text: |-
-    package minesweeper
-
-    class Cell(var x: Int = 0, var y: Int = 0) {
-        override fun equals(other: Any?): Boolean {
-            val oth = other as Cell
-            return x == oth.x && y == oth.y
-        }
-
-        override fun hashCode(): Int {
-            var result = x
-            result = 31 * result + y
-            return result
-        }
-
-        override fun toString(): String {
-            return "x = $x, y = $y"
-        }
-    }
   learner_created: true
 - name: src/minesweeper/MineField.kt
   visible: true
-  text: |-
-    package minesweeper
-
-    import kotlin.random.Random
-
-    class MineField(private val fieldSize: Int, private val mineNum: Int) {
-        private val field: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { '.' } }
-        private val mines: Array<Cell> = Array(mineNum) { Cell() }
-
-        fun initial() {
-            var curMineNum = 0
-
-            while (curMineNum < mineNum) {
-                val y = Random.nextInt(fieldSize)
-                val x = Random.nextInt(fieldSize)
-
-                val cell = Cell(x, y)
-
-                if (!mines.contains(cell)) {
-                    mines[curMineNum].x = x
-                    mines[curMineNum].y = y
-                    curMineNum++
-                }
-            }
-        }
-
-        fun calcMineNum() {
-            for (x in field[0].indices) {
-                for (y in field.indices) {
-                    var aroundMines = 0
-
-                    if (field[x][y] == '.') {
-                        if (x - 1 >= 0 && y - 1 >= 0) {
-                            if (mines.contains(Cell(x - 1, y - 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (y - 1 >= 0) {
-                            if (mines.contains(Cell(x, y - 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (x + 1 <= field[0].lastIndex && y - 1 >= 0) {
-                            if (mines.contains(Cell(x + 1, y - 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (x - 1 >= 0) {
-                            if (mines.contains(Cell(x - 1, y))) {
-                                aroundMines++
-                            }
-                        }
-                        if (x + 1 <= field[0].lastIndex) {
-                            if (mines.contains(Cell(x + 1, y))) {
-                                aroundMines++
-                            }
-                        }
-                        if (x - 1 >= 0 && y + 1 <= field.lastIndex) {
-                            if (mines.contains(Cell(x - 1, y + 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (y + 1 <= field.lastIndex) {
-                            if (mines.contains(Cell(x, y + 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (x + 1 <= field[0].lastIndex && y + 1 <= field.lastIndex) {
-                            if (mines.contains(Cell(x + 1, y + 1))) {
-                                aroundMines++
-                            }
-                        }
-                        if (aroundMines > 0 && !mines.contains(Cell(x, y))) {
-                            field[x][y] = '0' + aroundMines
-                        }
-                    }
-                }
-            }
-        }
-
-        fun showMineField() {
-            println(" |123456789|")
-            println("-|---------|")
-            for (f in field) {
-                print(field.indexOf(f) + 1)
-                print("|")
-                print(f)
-                println("|")
-            }
-            println("-|---------|")
-        }
-
-        fun getCellSymbol(x: Int, y: Int): Char {
-            return field[y][x]
-        }
-
-        fun setCellSymbol(x: Int, y: Int, c: Char) {
-            field[y][x] = c
-        }
-
-        fun getMarkedCells(): Array<Cell> {
-            val cells = ArrayList<Cell>()
-
-            for (x in field[0].indices) {
-                for (y in field.indices) {
-                    if (field[x][y] == '*') {
-                        cells.add(Cell(x, y))
-                    }
-                }
-            }
-
-            return cells.toTypedArray()
-        }
-
-        fun isWin(): Boolean {
-            var win = false
-
-            val cells = getMarkedCells()
-
-            win = if (cells.size == mineNum) {
-                for (c in cells) {
-                    if (mines.contains(c)) {
-                        win = true
-                    } else {
-                        win = false
-                        break
-                    }
-                }
-                win
-            } else {
-                false
-            }
-
-            return win
-        }
-
-        fun win() {
-            println("Congratulations! You found all the mines!")
-        }
-    }
   learner_created: true
-feedback_link: https://hyperskill.org/projects/8/stages/469/implement
+- name: src/minesweeper/Test.java
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/projects/8/stages/469/implement#comment
 status: Failed
-feedback:
-  message: |-
-    Wrong answer in test #1
-
-    The last grid contains &#39;*&#39; and &#39;/&#39; characters that are next to each other. This situation is impossible. If there is &#39;*&#39; character that is next to &#39;/&#39; it should be replaced to &#39;/&#39; or to a number.
-
-    Please find below the output of your program during this failed test.
-    Note that the &#39;&gt;&#39; character indicates the beginning of the input line.
-
-    ---
-
-    How many mines do you want on the field?&gt; 1
-     |123456789|
-    -|---------|
-    1|.........|
-    2|.........|
-    3|.........|
-    4|.........|
-    5|.........|
-    6|.........|
-    7|.........|
-    8|.....111.|
-    9|.....1.1.|
-    -|---------|
-    Set/unset mines marks or claim a cell as free:&gt; 5 2 mine
-     |123456789|
-    -|---------|
-    1|.........|
-    2|....*....|
-    3|.........|
-    4|.........|
-    5|.........|
-    6|.........|
-    7|.........|
-    8|.....111.|
-    9|.....1.1.|
-    -|---------|
-    Set/unset mines marks or claim a cell as free:&gt; 6 1 free
-     |123456789|
-    -|---------|
-    1|...../...|
-    2|....*....|
-    3|.........|
-    4|.........|
-    5|.........|
-    6|.........|
-    7|.........|
-    8|.....111.|
-    9|.....1.1.|
-    -|---------|
-    Set/unset mines marks or claim a cell as free:
-  time: Sun, 14 Mar 2021 10:23:19 UTC
 record: -1

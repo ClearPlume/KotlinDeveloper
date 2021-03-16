@@ -10,7 +10,7 @@ fun main() {
     mineField.calcMineNum()
     mineField.showMineField()
 
-    while (!mineField.isWin()) {
+    while (mineField.getRunning()) {
         print("Set/unset mines marks or claim a cell as free:")
         val playerInputOriginal = readLine()!!
         val playerInput = playerInputOriginal.split(' ')
@@ -49,5 +49,9 @@ fun main() {
         }
     }
 
-    mineField.win()
+    if (mineField.isWin()) {
+        mineField.win()
+    } else {
+        mineField.failed()
+    }
 }

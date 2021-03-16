@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/254284/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Sun, 14 Mar 2021 09:54:52 UTC
+update_date: Tue, 16 Mar 2021 01:19:39 UTC
 stages:
 - id: 46
   step: 7686
@@ -21,49 +21,6 @@ stages:
   step: 7690
   is_completed: false
 topics:
-  1:
-  - title: Comments
-    theory_id: 4406
-  - title: Coding style conventions
-    theory_id: 4419
-  - title: Naming variables
-    theory_id: 4389
-  - title: IDE
-    theory_id: 10996
-  - title: IntelliJ IDEA
-    theory_id: 3801
-  - title: IDEA Basics
-    theory_id: 5819
-  - title: EduTools
-    theory_id: 5839
-  2:
-  - title: Introduction to OOP
-    theory_id: 3614
-  - title: Declaring functions
-    theory_id: 4580
-  - title: Objects
-    theory_id: 6773
-  - title: String templates
-    theory_id: 4547
-  - title: Declaring classes
-    theory_id: 6200
-  - title: Constructors
-    theory_id: 10740
-  - title: Member functions
-    theory_id: 6364
-  - title: Extension functions
-    theory_id: 6621
-  - title: Properties accessors
-    theory_id: 10511
-  3:
-  - title: Secondary constructor
-    theory_id: 10746
-  - title: Object declarations
-    theory_id: 10698
-  - title: Companion object
-    theory_id: 10707
-  - title: Enum
-    theory_id: 6245
   0:
   - title: Modulo division
     theory_id: 10586
@@ -111,7 +68,7 @@ topics:
     theory_id: 4525
   - title: Characters
     theory_id: 4680
-  - title: Strings
+  - title: Working with strings
     theory_id: 12561
   - title: Ranges
     theory_id: 4633
@@ -131,3 +88,46 @@ topics:
     theory_id: 4652
   - title: For loop and arrays
     theory_id: 4657
+  1:
+  - title: IDE
+    theory_id: 10996
+  - title: Comments
+    theory_id: 4406
+  - title: Coding style conventions
+    theory_id: 4419
+  - title: Naming variables
+    theory_id: 4389
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: IDEA Basics
+    theory_id: 5819
+  - title: EduTools
+    theory_id: 5839
+  2:
+  - title: Introduction to OOP
+    theory_id: 3614
+  - title: Declaring functions
+    theory_id: 4580
+  - title: Default arguments
+    theory_id: 4637
+  - title: Named arguments
+    theory_id: 4640
+  - title: Declaring classes
+    theory_id: 6200
+  - title: Constructors
+    theory_id: 10740
+  - title: Member functions
+    theory_id: 6364
+  - title: Properties accessors
+    theory_id: 10511
+  - title: Extension functions
+    theory_id: 6621
+  3:
+  - title: Secondary constructor
+    theory_id: 10746
+  - title: Object declarations
+    theory_id: 10698
+  - title: Companion object
+    theory_id: 10707
+  - title: Enum
+    theory_id: 6245

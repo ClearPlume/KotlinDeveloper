@@ -1,4 +1,3 @@
-import minesweeper.MainKt;
 import org.hyperskill.hstest.stage.StageTest;
 import org.hyperskill.hstest.testcase.CheckResult;
 import org.hyperskill.hstest.testcase.TestCase;
@@ -290,10 +289,6 @@ class State {
 
 public class MinesweeperTest extends StageTest<State> {
 
-    public MinesweeperTest() {
-        super(MainKt.class);
-    }
-
     @Override
     public List<TestCase<State>> generate() {
         List<TestCase<State>> tests = new ArrayList<>();
@@ -446,6 +441,16 @@ public class MinesweeperTest extends StageTest<State> {
     @Override
     public CheckResult check(String reply, State attach) {
         reply = reply.toLowerCase();
+
+        try {
+            List<Grid> grids = Grid.parse(reply);
+            if (grids.size() <= 1) {
+                return CheckResult.wrong(
+                    "You should output at least 2 grids, found " + grids.size());
+            }
+        } catch (Exception ex) {
+            return CheckResult.wrong(ex.getMessage());
+        }
 
         boolean isFailed = reply.contains("failed");
         boolean isWin = reply.contains("congratulations");

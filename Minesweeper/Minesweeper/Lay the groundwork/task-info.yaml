@@ -4,7 +4,6 @@ files:
 - name: test/MinesweeperTest.java
   visible: false
   text: |
-    import minesweeper.MainKt;
     import org.hyperskill.hstest.stage.StageTest;
     import org.hyperskill.hstest.testcase.CheckResult;
     import org.hyperskill.hstest.testcase.TestCase;
@@ -16,10 +15,6 @@ files:
     import java.util.stream.Collectors;
 
     public class MinesweeperTest extends StageTest {
-
-        public MinesweeperTest() {
-            super(MainKt.class);
-        }
 
         @Override
         public List<TestCase> generate() {
@@ -99,10 +94,6 @@ files:
         print("Hello, World!")
     }
   learner_created: false
-feedback_link: https://hyperskill.org/projects/8/stages/46/implement
+feedback_link: https://hyperskill.org/projects/8/stages/46/implement#comment
 status: Solved
-feedback:
-  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/8/stages/46/implement">JetBrains
-    Academy</a>
-  time: Fri, 25 Sep 2020 13:30:56 UTC
 record: 1
