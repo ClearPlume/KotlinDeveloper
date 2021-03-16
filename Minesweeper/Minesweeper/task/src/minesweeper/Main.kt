@@ -6,14 +6,13 @@ fun main() {
     val fieldSize = 9
     val mineField = MineField(fieldSize, readLine()!!.toInt())
 
-    mineField.initial()
     mineField.calcMineNum()
     mineField.showMineField()
 
-    while (mineField.getRunning()) {
+    while (mineField.running) {
         print("Set/unset mines marks or claim a cell as free:")
-        val playerInputOriginal = readLine()!!
-        val playerInput = playerInputOriginal.split(' ')
+
+        val playerInput = readLine()!!.split(' ')
         val x = playerInput[0].toInt() - 1
         val y = playerInput[1].toInt() - 1
 
@@ -23,29 +22,12 @@ fun main() {
             println("There is a number here!")
             continue
         } else {
-            when (playerInput[2]) {
-                "mine" -> {
-                    when (cellSymbol) {
-                        '.' -> {
-                            mineField.setCellSymbol(x, y, '*')
-                            mineField.showMineField()
-                        }
-                        else -> {
-                            mineField.setCellSymbol(x, y, '.')
-                            mineField.showMineField()
-                        }
-                    }
-                }
-                "free" -> {
-                    if (cellSymbol == '.') {
-                        mineField.setCellSymbol(x, y, '/')
-                        mineField.showMineField()
-                    }
-                }
-                else -> {
-                    println("Error command!")
-                }
+            if ("mine" == playerInput[2]) {
+
+            } else {
+
             }
+            mineField.showMineField()
         }
     }
 

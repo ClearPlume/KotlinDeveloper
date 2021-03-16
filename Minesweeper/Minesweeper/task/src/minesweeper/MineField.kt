@@ -1,17 +1,24 @@
 package minesweeper
 
+import minesweeper.Cell.State
 import kotlin.random.Random
 
 class MineField(private val fieldSize: Int, private val mineNum: Int) {
-    private var running = true
-    private var steppedMine = false
+    var running = true
+    var steppedMine = false
 
-    private val fieldView: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { '.' } }
-    private val fieldData: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { '\u0000' } }
-    private val mines: Array<Cell> = Array(mineNum) { Cell() }
+    // Data used as cell display
+    private val fieldView: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { State.UN_EXPLORED.symbol } }
 
-    fun initial() {
+    // Cells in the game
+    private val cells: Array<Array<Cell>> = Array(fieldSize) { Array(fieldSize) { Cell() } }
+
+    init {
+        // Number of Mines currently generated
         var curMineNum = 0
+        // Array of cells with mines, used as identification, to avoid
+        // randomly generated multiple mines in the same location
+        val mines: Array<Cell> = Array(mineNum) { Cell(state = State.MINE) }
 
         while (curMineNum < mineNum) {
             val y = Random.nextInt(fieldSize)
@@ -22,6 +29,11 @@ class MineField(private val fieldSize: Int, private val mineNum: Int) {
             if (!mines.contains(cell)) {
                 mines[curMineNum].x = x
                 mines[curMineNum].y = y
+
+                cells[x][y].x = x
+                cells[x][y].y = y
+                cells[x][y].state = State.MINE
+
                 curMineNum++
             }
         }
@@ -32,7 +44,7 @@ class MineField(private val fieldSize: Int, private val mineNum: Int) {
             for (y in fieldView.indices) {
                 var aroundMines = 0
 
-                if (fieldView[x][y] == '.') {
+                /*if (fieldView[x][y] == ' ') {
                     if (x - 1 >= 0 && y - 1 >= 0) {
                         if (mines.contains(Cell(x - 1, y - 1))) {
                             aroundMines++
@@ -76,18 +88,21 @@ class MineField(private val fieldSize: Int, private val mineNum: Int) {
                     if (aroundMines > 0 && !mines.contains(Cell(x, y))) {
                         fieldView[x][y] = '0' + aroundMines
                     }
-                }
+                }*/
             }
         }
     }
 
+    /**
+     * Show "game interface"
+     */
     fun showMineField() {
         println(" |123456789|")
         println("-|---------|")
-        for (f in fieldView) {
-            print(fieldView.indexOf(f) + 1)
+        for (field in fieldView) {
+            print(fieldView.indexOf(field) + 1)
             print("|")
-            print(f)
+            print(field)
             println("|")
         }
         println("-|---------|")
@@ -101,51 +116,12 @@ class MineField(private val fieldSize: Int, private val mineNum: Int) {
         fieldView[y][x] = c
     }
 
-    fun getMarkedCells(): Array<Cell> {
-        val cells = ArrayList<Cell>()
-
-        for (x in fieldView[0].indices) {
-            for (y in fieldView.indices) {
-                if (fieldView[x][y] == '*') {
-                    cells.add(Cell(x, y))
-                }
-            }
-        }
-
-        return cells.toTypedArray()
-    }
-
     fun isWin(): Boolean {
-        var win = false
-
-        val cells = getMarkedCells()
-
-        win = if (cells.size == mineNum) {
-            for (c in cells) {
-                if (mines.contains(c)) {
-                    win = true
-                } else {
-                    win = false
-                    break
-                }
-            }
-            win
-        } else {
-            false
-        }
-
+        val win = false
         return win && steppedMine
     }
 
     fun win() = println("Congratulations! You found all the mines!")
 
     fun failed() = println("You stepped on a mine and failed!")
-
-    fun getRunning(): Boolean = running
-
-    fun setRunning(running: Boolean) {
-        this.running = running
-    }
-
-
 }
