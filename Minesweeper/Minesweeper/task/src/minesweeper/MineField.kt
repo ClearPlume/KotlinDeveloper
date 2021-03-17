@@ -4,9 +4,6 @@ import minesweeper.Cell.State
 import kotlin.random.Random
 
 class MineField(private val fieldSize: Int, private val mineNum: Int) {
-    var running = true
-    var steppedMine = false
-
     // Data used as cell display
     private val fieldView: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { State.UN_EXPLORED.symbol } }
 
@@ -108,17 +105,37 @@ class MineField(private val fieldSize: Int, private val mineNum: Int) {
         println("-|---------|")
     }
 
-    fun getCellSymbol(x: Int, y: Int): Char {
-        return fieldView[y][x]
+    /**
+     *  Player annotates the status of the specified cell
+     */
+    fun action(cell: Cell, input: String) {
+        val cellSymbol = fieldView[cell.y][cell.x]
+
+        if (cellSymbol.isDigit()) {
+            println("There is a number here!")
+            return
+        }
+
+        if ("mine" == input) {
+            // Player thinks the cell has a mine
+            if (fieldView[cell.y][cell.x] == State.MARKED_MINE.symbol) {
+                fieldView[cell.y][cell.x] = State.UN_EXPLORED.symbol
+            } else {
+                fieldView[cell.y][cell.x] = State.MARKED_MINE.symbol
+            }
+        } else {
+            // Player thinks the cell is empty
+            fieldView[cell.y][cell.x] = State.EXPLORED_FREE.symbol
+        }
     }
 
-    fun setCellSymbol(x: Int, y: Int, c: Char) {
-        fieldView[y][x] = c
-    }
-
-    fun isWin(): Boolean {
-        val win = false
-        return win && steppedMine
+    /**
+     *  Judge the state of the game
+     *
+     * @return Is the game finished
+     */
+    fun checkGameState(): Boolean {
+        return true
     }
 
     fun win() = println("Congratulations! You found all the mines!")

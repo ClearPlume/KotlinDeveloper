@@ -9,31 +9,18 @@ fun main() {
     mineField.calcMineNum()
     mineField.showMineField()
 
-    while (mineField.running) {
+    do {
         print("Set/unset mines marks or claim a cell as free:")
 
         val playerInput = readLine()!!.split(' ')
-        val x = playerInput[0].toInt() - 1
-        val y = playerInput[1].toInt() - 1
+        val cell = Cell(playerInput[0].toInt() - 1, playerInput[1].toInt() - 1)
+        val input = playerInput[2]
 
-        val cellSymbol = mineField.getCellSymbol(x, y)
-
-        if (cellSymbol.isDigit()) {
-            println("There is a number here!")
-            continue
+        if (input == "mine" || input == "free") {
+            mineField.action(cell, input)
         } else {
-            if ("mine" == playerInput[2]) {
-
-            } else {
-
-            }
-            mineField.showMineField()
+            println("invalid input: \"$input\", Legal options are: [\"mine\", \"free\"] ")
         }
-    }
-
-    if (mineField.isWin()) {
-        mineField.win()
-    } else {
-        mineField.failed()
-    }
+        mineField.showMineField()
+    } while (mineField.checkGameState())
 }
