@@ -6,7 +6,6 @@ fun main() {
     val fieldSize = 9
     val mineField = MineField(fieldSize, readLine()!!.toInt())
 
-    mineField.calcMineNum()
     mineField.showMineField()
 
     do {
@@ -21,6 +20,5 @@ fun main() {
         } else {
             println("invalid input: \"$input\", Legal options are: [\"mine\", \"free\"] ")
         }
-        mineField.showMineField()
     } while (mineField.checkGameState())
 }
