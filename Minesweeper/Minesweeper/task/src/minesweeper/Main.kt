@@ -20,5 +20,5 @@ fun main() {
         } else {
             println("invalid input: \"$input\", Legal options are: [\"mine\", \"free\"] ")
         }
-    } while (mineField.checkGameState())
+    } while (!mineField.checkGameState())
 }

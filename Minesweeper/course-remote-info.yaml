@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/254284/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 18 Mar 2021 09:07:54 UTC
+update_date: Sun, 28 Mar 2021 07:40:42 UTC
 stages:
 - id: 46
   step: 7686
@@ -108,6 +108,10 @@ topics:
     theory_id: 3614
   - title: Declaring functions
     theory_id: 4580
+  - title: When expression
+    theory_id: 4631
+  - title: Functional decomposition
+    theory_id: 12668
   - title: Default arguments
     theory_id: 4637
   - title: Named arguments

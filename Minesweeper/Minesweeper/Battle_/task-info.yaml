@@ -521,9 +521,9 @@ files:
 - name: src/minesweeper/MineField.kt
   visible: true
   learner_created: true
-- name: src/minesweeper/Test.java
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/projects/8/stages/469/implement#comment
 status: Failed
+feedback:
+  message: Compilation Failed
+  time: Sun, 28 Mar 2021 08:46:17 UTC
 record: -1

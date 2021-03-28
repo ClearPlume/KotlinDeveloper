@@ -7,6 +7,12 @@ package minesweeper
  * @param y 单元格的y坐标
  */
 class Cell(var x: Int = 0, var y: Int = 0, var state: State = State.UN_EXPLORED) {
+    constructor(cell: Cell, state: State): this() {
+        this.x = cell.x
+        this.y = cell.y
+        this.state = state
+    }
+
     /**
      * Symbols of cell
      */
