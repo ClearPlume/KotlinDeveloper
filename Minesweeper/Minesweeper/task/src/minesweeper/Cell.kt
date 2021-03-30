@@ -3,11 +3,11 @@ package minesweeper
 /**
  * Represents a cell in the game
  *
- * @param x 单元格的x坐标
- * @param y 单元格的y坐标
+ * @param x coordinate for x
+ * @param y coordinate for y
  */
 class Cell(var x: Int = 0, var y: Int = 0, var state: State = State.UN_EXPLORED) {
-    constructor(cell: Cell, state: State): this() {
+    constructor(cell: Cell, state: State) : this() {
         this.x = cell.x
         this.y = cell.y
         this.state = state

@@ -9,14 +9,14 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
     // Data used as cell display
     private val fieldView: Array<CharArray> = Array(fieldSize) { CharArray(fieldSize) { State.UN_EXPLORED.symbol } }
 
-    // Cells in the game
+    // Cells in the game, it's background data for logic things
     private val cells: Array<Array<Cell>> = Array(fieldSize) { y ->
         Array(fieldSize) { x ->
             Cell(x, y)
         }
     }
 
-    // Mines in the game
+    // Mines in the game, omit the process of getting mines from cells
     private val mines: Array<Cell> = Array(mineNum) { Cell(state = State.MINE) }
 
     // Did the player step on a mine
@@ -66,10 +66,6 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
             return
         }
 
-        if (cellSymbol == '/') {
-            return
-        }
-
         if ("mine" == input) {
             // Player thinks the cell has a mine
             if (cellSymbol == State.MARKED_MINE.symbol) {
@@ -79,13 +75,18 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
             }
         } else {
             if (firstStep) {
+                firstStep = false
+
                 // Make sure that the first cell explored with the free command is not a mine
                 if (Cell(cell, State.MINE) in mines) {
-                    cells[cell.y][cell.x].state = State.UN_EXPLORED
-                    do {
-                        val noneMineCell = cells.random().filter { it.state != State.MINE }.randomOrNull()
-                        noneMineCell?.state = State.MINE
-                    } while (noneMineCell == null || noneMineCell.state == State.MINE)
+                    var noneMineCell = findCellNotMines()
+
+                    if (null == noneMineCell) {
+                        lose()
+                        return
+                    }
+
+                    cells[cell.y][cell.x] = noneMineCell.also { noneMineCell = cells[cell.y][cell.x] }
                 }
             }
 
@@ -99,11 +100,28 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
             }
 
             // If that cell doesn't have mines, then mark it as "explored blank cell"
-            fieldView[cell.y][cell.x] = State.EXPLORED_FREE.symbol
+            if (fieldView[cell.y][cell.x] != State.MARKED_MINE.symbol) {
+                fieldView[cell.y][cell.x] = State.EXPLORED_FREE.symbol
+            }
 
             // This cell has no mines, explore it
             exploreCell(cellData)
         }
+    }
+
+    private fun findCellNotMines(): Cell? {
+        var noneMineCell: Cell? = null
+
+        for (row in cells) {
+            for (cell in row) {
+                if (cell.state == State.MINE) {
+                    noneMineCell = cell
+                    break
+                }
+            }
+        }
+
+        return noneMineCell
     }
 
     /**
@@ -117,7 +135,7 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
      */
     private fun exploreCell(cell: Cell) {
         val mineNumAroundCell = aroundCellHaveMine(cell)
-        cell.state = State.EXPLORED_FREE
+        cells[cell.y][cell.x].state = State.EXPLORED_FREE
         fieldView[cell.y][cell.x] = State.EXPLORED_FREE.symbol
 
         if (mineNumAroundCell > 0) {
@@ -126,9 +144,19 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
             return
         }
 
+        if (cell.x - 1 >= 0 && cell.y - 1 >= 0) {
+            if (cells[cell.y - 1][cell.x - 1].state == State.UN_EXPLORED) {
+                exploreCell(cells[cell.y - 1][cell.x - 1])
+            }
+        }
         if (cell.y - 1 >= 0) {
             if (cells[cell.y - 1][cell.x].state == State.UN_EXPLORED) {
                 exploreCell(cells[cell.y - 1][cell.x])
+            }
+        }
+        if (cell.x + 1 <= fieldView[0].lastIndex && cell.y - 1 >= 0) {
+            if (cells[cell.y - 1][cell.x + 1].state == State.UN_EXPLORED) {
+                exploreCell(cells[cell.y - 1][cell.x + 1])
             }
         }
         if (cell.x - 1 >= 0) {
@@ -141,9 +169,19 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
                 exploreCell(cells[cell.y][cell.x + 1])
             }
         }
+        if (cell.x - 1 >= 0 && cell.y + 1 <= fieldView.lastIndex) {
+            if (cells[cell.y + 1][cell.x - 1].state == State.UN_EXPLORED) {
+                exploreCell(cells[cell.y + 1][cell.x - 1])
+            }
+        }
         if (cell.y + 1 <= fieldView.lastIndex) {
             if (cells[cell.y + 1][cell.x].state == State.UN_EXPLORED) {
                 exploreCell(cells[cell.y + 1][cell.x])
+            }
+        }
+        if (cell.x + 1 <= fieldView[0].lastIndex && cell.y + 1 <= fieldView.lastIndex) {
+            if (cells[cell.y + 1][cell.x + 1].state == State.UN_EXPLORED) {
+                exploreCell(cells[cell.y + 1][cell.x + 1])
             }
         }
     }
@@ -216,14 +254,15 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
                 }
             }
             showMineField()
-            println("You stepped on a mine and failed!")
+            lose()
             // ...and, game over
             return true
         }
 
         // Check whether the player has marked all mines or all free cells
         if (checkPlayerMarkMines() || checkPlayerMarkFree()) {
-            println("Congratulations! You found all the mines!")
+            showMineField()
+            win()
             return true
         }
 
@@ -252,4 +291,8 @@ class MineField(private val fieldSize: Int, mineNum: Int) {
         }
         return true
     }
+
+    private fun win() = println("Congratulations! You found all the mines!")
+
+    private fun lose() = println("You stepped on a mine and failed!")
 }
