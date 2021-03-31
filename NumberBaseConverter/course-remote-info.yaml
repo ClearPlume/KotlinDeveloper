@@ -3,14 +3,14 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/495737/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Wed, 31 Mar 2021 01:14:45 UTC
+update_date: Wed, 31 Mar 2021 11:17:10 UTC
 stages:
 - id: 856
   step: 12345
   is_completed: true
 - id: 857
   step: 12346
-  is_completed: false
+  is_completed: true
 - id: 858
   step: 12347
   is_completed: false
@@ -59,26 +59,6 @@ topics:
     theory_id: 12553
   - title: String templates
     theory_id: 4547
-  - title: Arithmetic operations
-    theory_id: 4472
-  - title: Increment and decrement
-    theory_id: 10776
-  - title: Type of the numeric expression
-    theory_id: 9506
-  - title: Integers in action
-    theory_id: 4488
-  - title: Relational operators
-    theory_id: 4525
-  - title: Characters
-    theory_id: 4680
-  - title: Working with strings
-    theory_id: 12561
-  - title: If expression
-    theory_id: 4625
-  - title: Repeating blocks
-    theory_id: 4643
-  - title: While loops
-    theory_id: 4659
   1:
   - title: Converting from binary to decimal
     theory_id: 5622
