@@ -2,3 +2,5 @@ content:
 - Default arguments
 - BigInteger
 - Working with strings
+- BigDecimal
+- String arrays
