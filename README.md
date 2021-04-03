@@ -10,3 +10,5 @@
 ## 第三项目：[Minesweeper](https://github.com/ClearPlume/KotlinDeveloper/tree/Minesweeper)
 
 ## 第四项目：[NumberBaseConverter](https://github.com/ClearPlume/KotlinDeveloper/tree/NumberBaseConverter)
+
+## 第五项目：[CinemaRoomManager](https://github.com/ClearPlume/KotlinDeveloper/tree/CinemaRoomManager)
