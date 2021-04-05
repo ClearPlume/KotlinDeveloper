@@ -3,17 +3,17 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/432858/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 01 Jan 1970 00:00:00 UTC
+update_date: Mon, 05 Apr 2021 07:14:57 UTC
 stages:
 - id: 735
   step: 11364
   is_completed: true
 - id: 736
   step: 11365
-  is_completed: false
+  is_completed: true
 - id: 737
   step: 11366
-  is_completed: false
+  is_completed: true
 - id: 738
   step: 11367
   is_completed: false
@@ -99,3 +99,20 @@ topics:
     theory_id: 10622
   - title: The try-catch-finally statement
     theory_id: 11809
+  0:
+  - title: Modulo division
+    theory_id: 10586
+  - title: Introduction to Kotlin
+    theory_id: 4350
+  - title: Basic literals
+    theory_id: 4351
+  - title: Overview of the basic program
+    theory_id: 4362
+  - title: Values and variables
+    theory_id: 4371
+  - title: Standard output
+    theory_id: 4425
+  - title: Arithmetic operations
+    theory_id: 4472
+  - title: Increment and decrement
+    theory_id: 10776
