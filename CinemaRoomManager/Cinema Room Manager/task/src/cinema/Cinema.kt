@@ -32,35 +32,40 @@ fun main() {
         }
     }
 
-    println("Cinema:")
-    seats.forEach {
-        it.forEach { seat -> print(seat) }
-        println()
-    }
+    do {
+        showMenu("Show the seats", "Buy a ticket")
+        println("0. Exit")
 
-    println("Enter a row number:")
-    val row = scanner.nextInt()
+        when (scanner.nextInt()) {
+            1 -> {
+                println("Cinema:")
+                seats.forEach {
+                    it.forEach { seat -> print(seat) }
+                    println()
+                }
+            }
+            2 -> {
+                println("Enter a row number:")
+                val row = scanner.nextInt()
 
-    println("Enter a seat number in that row:")
-    val col = scanner.nextInt()
+                println("Enter a seat number in that row:")
+                val col = scanner.nextInt()
 
-    seats[row][col] = "B "
+                seats[row][col] = "B "
 
-    val seatsNum = (rows - 1) * (cols - 1)
+                val seatsNum = (rows - 1) * (cols - 1)
 
-    val ticketPrice = if (seatsNum <= 60) {
-        10
-    } else {
-        if (row in 1..(rows - 1) / 2) 10 else 8
-    }
+                val ticketPrice = if (seatsNum <= 60) {
+                    10
+                } else {
+                    if (row in 1..(rows - 1) / 2) 10 else 8
+                }
 
-    println("Ticket price: $$ticketPrice")
-
-    println("Cinema:")
-    seats.forEach {
-        it.forEach { seat -> print(seat) }
-        println()
-    }
+                println("Ticket price: $$ticketPrice")
+            }
+            else -> break
+        }
+    } while (true)
 
     // val totalIncome = if (seatsNum <= 20) {
     //     seatsNum * 10
@@ -74,4 +79,8 @@ fun main() {
     //
     // println("Total income:")
     // println("$$totalIncome")
+}
+
+fun showMenu(vararg items: String) {
+    items.forEachIndexed { index, item -> println("${index + 1}. $item") }
 }
