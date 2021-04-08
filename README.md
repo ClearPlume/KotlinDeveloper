@@ -12,3 +12,5 @@
 ## 第四项目：[NumberBaseConverter](https://github.com/ClearPlume/KotlinDeveloper/tree/NumberBaseConverter)
 
 ## 第五项目：[CinemaRoomManager](https://github.com/ClearPlume/KotlinDeveloper/tree/CinemaRoomManager)
+
+## 第六项目：[Tic-Tac-Toe](https://github.com/ClearPlume/KotlinDeveloper/tree/Tic-Tac-Toe)
