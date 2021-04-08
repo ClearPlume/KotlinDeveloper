@@ -1,3 +1,8 @@
 content:
 - Named arguments
 - Functional decomposition
+- Errors in programs
+- What is an exception
+- Taming exceptions
+- The try-catch statement
+- The try-catch-finally statement
