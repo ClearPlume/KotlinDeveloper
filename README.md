@@ -14,3 +14,5 @@
 ## 第五项目：[CinemaRoomManager](https://github.com/ClearPlume/KotlinDeveloper/tree/CinemaRoomManager)
 
 ## 第六项目：[Tic-Tac-Toe](https://github.com/ClearPlume/KotlinDeveloper/tree/Tic-Tac-Toe)
+
+## 第七项目：[TipCalculator](https://github.com/ClearPlume/KotlinDeveloper/tree/TipCalculator)
