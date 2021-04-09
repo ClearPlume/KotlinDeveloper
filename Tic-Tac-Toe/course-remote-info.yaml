@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/394081/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Fri, 09 Apr 2021 06:21:04 UTC
+update_date: Fri, 09 Apr 2021 08:00:53 UTC
 stages:
 - id: 654
   step: 10475
@@ -16,7 +16,7 @@ stages:
   is_completed: true
 - id: 657
   step: 10478
-  is_completed: false
+  is_completed: true
 - id: 658
   step: 10479
   is_completed: false
@@ -86,6 +86,14 @@ topics:
     theory_id: 11477
   - title: Multi-dimensional array
     theory_id: 10950
+  - title: If expression
+    theory_id: 4625
+  - title: Repeating blocks
+    theory_id: 4643
+  - title: For loop and ranges
+    theory_id: 4652
+  - title: For loop and arrays
+    theory_id: 4657
   3:
   - title: Comments
     theory_id: 4406
