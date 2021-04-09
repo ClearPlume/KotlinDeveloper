@@ -1,69 +1,70 @@
 package tictactoe
 
-import kotlin.math.abs
+const val GRID_SIZE = 3
 
-const val DRAW = '\u0000'
-const val IMPOSSIBLE = '\u0001'
-const val NOT_FINISHED = '\u0002'
-const val gridSize = 3
+enum class State {
+    X_WIN, O_WIN, DRAW, NOT_FINISHED
+}
 
 fun main() {
     // write your code here
-    print("Enter cells: ")
-    val cells = readLine()!!.chunked(gridSize).map { it.replace('_', ' ') }.toMutableList()
+    val cells = MutableList(GRID_SIZE) { "   " }
+    var xStep = true
+    var state: State
 
     show(cells)
 
-    var x = -1
-    var y = -1
+    do {
+        var x = -1
+        var y = -1
 
-    while (x == -1 && y == -1) {
-        print("Enter the coordinates: ")
-        val coordinates = readLine()!!.split(' ')
+        while (x == -1 && y == -1) {
+            print("Enter the coordinates: ")
+            val coordinates = readLine()!!.split(' ')
 
-        if (coordinates.size < 2) {
-            println("You should enter numbers!")
-            continue
+            if (coordinates.size < 2) {
+                println("You should enter numbers!")
+                continue
+            }
+
+            val numRegex = Regex("^\\d+$")
+            if (coordinates[0].matches(numRegex) && coordinates[1].matches(numRegex)) {
+                x = coordinates[0].toInt()
+                y = coordinates[1].toInt()
+            } else {
+                println("You should enter numbers!")
+                continue
+            }
+
+            if (x > GRID_SIZE || y > GRID_SIZE) {
+                println("Coordinates should be from 1 to 3!")
+                x = -1
+                y = -1
+                continue
+            }
+
+            if (cells[x - 1][y - 1] != ' ') {
+                println("This cell is occupied! Choose another one!")
+                x = -1
+                y = -1
+            }
         }
 
-        val numRegex = Regex("^\\d+$")
-        if (coordinates[0].matches(numRegex) && coordinates[1].matches(numRegex)) {
-            x = coordinates[0].toInt()
-            y = coordinates[1].toInt()
-        } else {
-            println("You should enter numbers!")
-            continue
+        x--
+        y--
+        cells[x, y] = if (xStep) 'X' else 'O'
+        xStep = !xStep
+        show(cells)
+        state = checkGameState(cells)
+    } while (state == State.NOT_FINISHED)
+
+    println(
+        when (state) {
+            State.O_WIN -> "O wins"
+            State.X_WIN -> "X wins"
+            else -> "Draw"
         }
-
-        if (x > gridSize || y > gridSize) {
-            println("Coordinates should be from 1 to 3!")
-            x = -1
-            y = -1
-            continue
-        }
-
-        if (cells[x - 1][y - 1] != ' ') {
-            println("This cell is occupied! Choose another one!")
-            x = -1
-            y = -1
-        }
-    }
-
-    x--
-    y--
-    cells[x, y] = 'X'
-
-    show(cells)
-
-    // val winner = whoWin(cells)
-    // println(
-    //     when (winner) {
-    //         DRAW -> "Draw"
-    //         IMPOSSIBLE -> "Impossible"
-    //         NOT_FINISHED -> "Game not finished"
-    //         else -> "$winner wins"
-    //     }
-    // )
+    )
 }
 
 fun show(cells: List<String>) {
@@ -84,15 +85,9 @@ fun show(cells: List<String>) {
     println("---------")
 }
 
-fun whoWin(cells: List<String>): Char {
-    val xNum = cells count 'X'
-    val oNum = cells count 'O'
+fun checkGameState(cells: List<String>): State {
     val spaceNum = cells count ' '
     val sameChars = mutableListOf<Char>()
-
-    if (abs(xNum - oNum) > 1) {
-        return IMPOSSIBLE
-    }
 
     // Detect three horizontal lines
     for (row in cells) {
@@ -104,22 +99,22 @@ fun whoWin(cells: List<String>): Char {
             lastCell = cell
         }
 
-        if (same) {
+        if (same && lastCell != ' ') {
             sameChars.add(lastCell)
         }
     }
 
     // Detect three vertical lines
-    for (curCol in 0 until gridSize) {
+    for (curCol in 0 until GRID_SIZE) {
         var same = true
         var lastCell = cells[0][curCol]
 
-        for (row in 0 until gridSize) {
+        for (row in 0 until GRID_SIZE) {
             same = same && lastCell == cells[row][curCol]
             lastCell = cells[row][curCol]
         }
 
-        if (same) {
+        if (same && lastCell != ' ') {
             sameChars.add(lastCell)
         }
     }
@@ -129,12 +124,12 @@ fun whoWin(cells: List<String>): Char {
         var same = true
         var lastCell = cells[0][0]
 
-        for (i in 0 until gridSize) {
+        for (i in 0 until GRID_SIZE) {
             same = same && lastCell == cells[i][i]
             lastCell = cells[i][i]
         }
 
-        if (same) {
+        if (same && lastCell != ' ') {
             sameChars.add(lastCell)
         }
     }
@@ -144,24 +139,32 @@ fun whoWin(cells: List<String>): Char {
         var lastCell = cells[0][2]
 
         var curRow = 0
-        var curCol = gridSize - 1
+        var curCol = GRID_SIZE - 1
         do {
             same = same && lastCell == cells[curRow][curCol]
             lastCell = cells[curRow][curCol]
 
             curRow++
             curCol--
-        } while (curRow < gridSize)
+        } while (curRow < GRID_SIZE)
 
-        if (same) {
+        if (same && lastCell != ' ') {
             sameChars.add(lastCell)
         }
     }
 
-    return when (sameChars.size) {
-        0 -> if (spaceNum > 0) NOT_FINISHED else DRAW
-        1 -> sameChars[0]
-        else -> IMPOSSIBLE
+    return if (sameChars.size == 0) {
+        if (spaceNum > 0) {
+            State.NOT_FINISHED
+        } else {
+            State.DRAW
+        }
+    } else {
+        if (sameChars[0] == 'O') {
+            State.O_WIN
+        } else {
+            State.X_WIN
+        }
     }
 }
 
