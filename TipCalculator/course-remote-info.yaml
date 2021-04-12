@@ -4,17 +4,17 @@ hyperskill_project:
   is_template_based: false
   use_ide: true
   environment: android
-update_date: Sat, 10 Apr 2021 16:01:47 UTC
+update_date: Mon, 12 Apr 2021 06:29:16 UTC
 stages:
 - id: 823
   step: 12245
   is_completed: true
 - id: 824
   step: 12246
-  is_completed: false
+  is_completed: true
 - id: 825
   step: 12247
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Modulo division
@@ -23,6 +23,8 @@ topics:
     theory_id: 12791
   - title: Linear, Frame, Relative layouts
     theory_id: 11981
+  - title: Text, images, and buttons
+    theory_id: 12918
   - title: Units of information
     theory_id: 6865
   - title: IDE
@@ -39,6 +41,10 @@ topics:
     theory_id: 11320
   - title: AndroidManifest File
     theory_id: 10762
+  - title: Resources
+    theory_id: 11087
+  - title: Values
+    theory_id: 11370
   - title: Introduction to OOP
     theory_id: 3614
   - title: External resources

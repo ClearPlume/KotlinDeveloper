@@ -521,6 +521,17 @@ files:
   visible: false
   text: sdk=28
   learner_created: false
+- name: src/main/res/values/dimen.xml
+  visible: true
+  text: |-
+    <?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <dimen name="normal_font_size">18sp</dimen>
+    </resources>
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/158/stages/825/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 12 Apr 2021 09:57:44 UTC
 record: -1

@@ -4,8 +4,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.TextView
 import com.google.android.material.slider.Slider
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertNotNull
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric
@@ -25,7 +24,7 @@ class ExampleUnitTest {
         assertNotNull(message, editText)
 
         val message2 = "edit_text should have proper inputType attribute"
-        assertEquals(message2, editText.inputType, EditorInfo.TYPE_CLASS_NUMBER)
+        assertEquals(message2, editText.inputType, EditorInfo.TYPE_NUMBER_FLAG_DECIMAL + EditorInfo.TYPE_CLASS_NUMBER)
     }
 
     @Test
@@ -55,5 +54,91 @@ class ExampleUnitTest {
 
         val message = "does view with id \"text_view\" placed in activity?"
         assertNotNull(message, activity.findViewById<TextView>(R.id.text_view))
+    }
+
+    @Test
+    fun testShouldCheckSliderListenerFirst() {
+        val activity = activityController.setup().get()
+        val slider = activity.findViewById<Slider>(R.id.slider)
+
+        val message = "does view with id \"slider\" placed in activity?"
+        assertNotNull(message, slider)
+
+        slider.value = 15f
+        val message2 = "\"text_view\" should be empty due to the missing data"
+        assertTrue(message2, activity.findViewById<TextView>(R.id.text_view).text.isNullOrEmpty())
+    }
+
+    @Test
+    fun testShouldCheckEditTextListenerFirst() {
+        val activity = activityController.setup().get()
+        val editText = activity.findViewById<EditText>(R.id.edit_text)
+        val textView = activity.findViewById<TextView>(R.id.text_view)
+
+        val message = "does view with id \"edit_text\" placed in activity?"
+        assertNotNull(message, editText)
+
+        editText.setText("39.39")
+        val message2 = "\"text_view\" should contain formatted output"
+        val output = "Tip amount: 0.00"
+        assertEquals(message2, output, textView.text)
+    }
+
+    @Test
+    fun testShouldCheckSliderListenerLast() {
+        val activity = activityController.setup().get()
+        val editText = activity.findViewById<EditText>(R.id.edit_text)
+        val textView = activity.findViewById<TextView>(R.id.text_view)
+        val slider = activity.findViewById<Slider>(R.id.slider)
+
+        val message1 = "does view with id \"edit_text\" placed in activity?"
+        assertNotNull(message1, editText)
+
+        val message2 = "does view with id \"slider\" placed in activity?"
+        assertNotNull(message2, slider)
+
+        editText.setText("39.39")
+        slider.value = 90f
+
+        val message3 = "\"text_view\" should contain formatted output"
+        val output = "Tip amount: 35.45"
+        assertEquals(message3, output, textView.text)
+    }
+
+    @Test
+    fun testShouldCheckEditTextListenerLast() {
+        val activity = activityController.setup().get()
+        val editText = activity.findViewById<EditText>(R.id.edit_text)
+        val textView = activity.findViewById<TextView>(R.id.text_view)
+        val slider = activity.findViewById<Slider>(R.id.slider)
+
+        val message1 = "does view with id \"edit_text\" placed in activity?"
+        assertNotNull(message1, editText)
+
+        val message2 = "does view with id \"slider\" placed in activity?"
+        assertNotNull(message2, slider)
+
+        slider.value = 90f
+        editText.setText("69.39")
+
+        val message3 = "\"text_view\" should contain formatted output"
+        val output = "Tip amount: 62.45"
+        assertEquals(message3, output, textView.text)
+    }
+
+    @Test
+    fun testShouldCheckLongJustForFun() {
+        val activity = activityController.setup().get()
+        val editText = activity.findViewById<EditText>(R.id.edit_text)
+        val textView = activity.findViewById<TextView>(R.id.text_view)
+
+        val message1 = "does view with id \"edit_text\" placed in activity?"
+        assertNotNull(message1, editText)
+
+        editText.setText("3939393939393939.6969") // Double
+
+        val message3 = "\"edit_text\" should process values greater than 2^31−1(2_147_483_647)"
+        val output = "Tip amount: 0.00"
+        assertEquals(message3, output, textView.text)
     }
 }

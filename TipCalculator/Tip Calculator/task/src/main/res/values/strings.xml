@@ -2,6 +2,7 @@
     <string name="app_name">Tip calculator</string>
     <string name="edit_text_hint">0</string>
     <string name="edit_text_auto_fill_hint">数字</string>
+    <string name="text_view_text">Tip amount: %1$.2f</string>
 
     <integer name="slider_step_size">1</integer>
     <integer name="slider_min">0</integer>

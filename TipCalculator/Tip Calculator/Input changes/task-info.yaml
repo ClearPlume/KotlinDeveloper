@@ -521,6 +521,12 @@ files:
   visible: false
   text: sdk=28
   learner_created: false
+- name: src/main/res/values/dimen.xml
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/158/stages/824/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 12 Apr 2021 08:36:10 UTC
+record: 2

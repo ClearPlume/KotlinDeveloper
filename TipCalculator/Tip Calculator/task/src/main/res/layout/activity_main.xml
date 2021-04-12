@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:autofillHints="@string/edit_text_auto_fill_hint"
         android:hint="@string/edit_text_hint"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <com.google.android.material.slider.Slider
         android:id="@+id/slider"
@@ -23,6 +23,7 @@
     <TextView
         android:id="@+id/text_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_font_size" />
 
 </LinearLayout>
