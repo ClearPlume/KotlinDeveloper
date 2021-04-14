@@ -3,15 +3,27 @@ package machine
 import java.util.*
 
 fun main() {
-    print("Write how many cups of coffee you will need:")
-    val cup = Scanner(System.`in`).nextInt()
+    val scanner = Scanner(System.`in`)
+
+    println("Write how many ml of water the coffee machine has:")
+    val water = scanner.nextInt()
+
+    println("Write how many ml of milk the coffee machine has:")
+    val milk = scanner.nextInt()
+
+    println("Write how many grams of coffee beans the coffee machine has:")
+    val gram = scanner.nextInt()
+
+    println("Write how many cups of coffee you will need:")
+    val tar = scanner.nextInt()
+
+    val cups = arrayOf(water / 200, milk / 50, gram / 15).minOf { it }
 
     println(
-        """
-        For $cup cups of coffee you will need:
-        ${cup * 200} ml of water
-        ${cup * 50} ml of milk
-        ${cup * 15} g of coffee beans
-    """.trimIndent()
+        when {
+            cups < tar -> "No, I can make only $cups cups of coffee"
+            cups > tar -> "Yes, I can make that amount of coffee (and even ${cups - tar} more than that)"
+            else -> "Yes, I can make that amount of coffee"
+        }
     )
 }
