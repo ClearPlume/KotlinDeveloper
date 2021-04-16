@@ -5,9 +5,35 @@ import java.util.*
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    val words = scanner.nextLine().split(' ')
-    val keywords = scanner.next()
+    println("Enter the number of people:")
+    val num = scanner.nextInt()
 
-    val index = words.indexOf(keywords)
-    println(if (index != -1) index + 1 else "Not found")
+    println("Enter all people:")
+    val lines = Array(num) { readLine()!! }
+    println()
+
+    println("Enter the number of search queries:")
+
+    repeat(scanner.nextInt()) {
+        println("Enter data to search people:")
+        val keyword = scanner.next()
+        println()
+
+        val found = MutableList(0) { "" }
+        for (line in lines) {
+            if (keyword.toLowerCase() in line.toLowerCase()) {
+                found.add(line)
+            }
+        }
+
+        println("Found people:")
+        if (found.isEmpty()) {
+            println("No matching people found.")
+        } else {
+            for (s in found) {
+                println(s)
+            }
+        }
+        println()
+    }
 }
