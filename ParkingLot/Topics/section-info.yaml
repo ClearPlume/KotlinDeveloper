@@ -1,2 +1,10 @@
 content:
 - Characters
+- Inheritance
+- Nullable and non-nullable types
+- Null safety
+- Type system
+- toString()
+- Data class
+- Default arguments
+- Destructuring declarations
