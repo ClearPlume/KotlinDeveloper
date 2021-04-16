@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/271583/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 01 Jan 1970 00:00:00 UTC
+update_date: Fri, 16 Apr 2021 11:01:47 UTC
 stages:
 - id: 494
   step: 7817
@@ -13,7 +13,7 @@ stages:
   is_completed: true
 - id: 496
   step: 7819
-  is_completed: false
+  is_completed: true
 - id: 497
   step: 7820
   is_completed: false
@@ -161,3 +161,20 @@ topics:
     theory_id: 10707
   - title: Enum
     theory_id: 6245
+  1:
+  - title: IDE
+    theory_id: 10996
+  - title: Computer algorithms
+    theory_id: 4953
+  - title: Introducing the first algorithm
+    theory_id: 10336
+  - title: The big O notation
+    theory_id: 4991
+  - title: Linear search
+    theory_id: 4970
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: IDEA Basics
+    theory_id: 5819
+  - title: EduTools
+    theory_id: 5839
