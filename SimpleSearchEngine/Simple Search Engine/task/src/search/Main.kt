@@ -1,25 +1,22 @@
 package search
 
+import java.io.File
 import java.util.*
 import kotlin.system.exitProcess
 
-fun main() {
+fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
-
-    println("Enter the number of people:")
-    val num = scanner.nextInt()
-
-    println("Enter all people:")
-    val lines = Array(num) { readLine()!! }
+    val persons = mutableListOf<String>()
+    File(args[1]).forEachLine { persons.add(it) }
 
     while (true) {
         when (menu()) {
             1 -> {
                 println("Enter a name or email to search all suitable people.")
-                val keyword = scanner.next()
+                val keyword = scanner.nextLine()
 
-                val found = MutableList(0) { "" }
-                for (line in lines) {
+                val found = mutableListOf<String>()
+                for (line in persons) {
                     if (keyword.toLowerCase() in line.toLowerCase()) {
                         found.add(line)
                     }
@@ -35,11 +32,14 @@ fun main() {
             }
             2 -> {
                 println("=== List of people ===")
-                for (line in lines) {
+                for (line in persons) {
                     println(line)
                 }
             }
-            0 -> exitProcess(0)
+            0 -> {
+                println("Bye!")
+                exitProcess(0)
+            }
         }
     }
 }

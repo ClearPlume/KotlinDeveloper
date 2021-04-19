@@ -1,0 +1,21 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun main(args: Array<String>) {
+        TODO()
+    }
+  learner_created: false
+- name: src/text.txt
+  visible: true
+  learner_created: true
+- name: src/FileLength.kt
+  visible: true
+  learner_created: true
+feedback_link: https://hyperskill.org/learn/step/10491#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Mon, 19 Apr 2021 02:30:43 UTC
+record: -1

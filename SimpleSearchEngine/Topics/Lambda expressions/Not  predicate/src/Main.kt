@@ -1,1 +1,1 @@
-val notPredicate: (Char) -> Boolean = TODO("Provide implementation")
+val notPredicate: (Char) -> Boolean = { !originalPredicate(it) }
