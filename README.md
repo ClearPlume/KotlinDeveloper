@@ -22,3 +22,5 @@
 ## 第九项目：[CoffeeMachine](https://github.com/ClearPlume/KotlinDeveloper/tree/CoffeeMachine)
 
 ## 第十项目：[ParkingLot](https://github.com/ClearPlume/KotlinDeveloper/tree/ParkingLot)
+
+## 第十一项目：[SmartCalculator](https://github.com/ClearPlume/KotlinDeveloper/tree/SmartCalculator)
