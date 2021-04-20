@@ -1,0 +1,1 @@
+fun solution(elements: MutableList<String>, index: Int) = elements.apply { removeAt(index) }

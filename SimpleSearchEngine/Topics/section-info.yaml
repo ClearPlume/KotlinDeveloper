@@ -2,3 +2,5 @@ content:
 - Functions as objects
 - Lambda expressions
 - The main() function
+- Mutable Map
+- Mutable List

@@ -7,12 +7,6 @@ files:
         TODO()
     }
   learner_created: false
-- name: src/text.txt
-  visible: true
-  learner_created: true
-- name: src/FileLength.kt
-  visible: true
-  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/10491#comment
 status: Solved
 feedback:
