@@ -13,14 +13,18 @@ fun main(args: Array<String>) {
     while (true) {
         when (menu()) {
             1 -> {
-                println("Enter a name or email to search all suitable people.")
-                val keyword = scanner.nextLine()
+                println("Select a matching strategy: ALL, ANY, NONE")
+                val strategy = Strategy.valueOf(scanner.nextLine())
 
-                val found = invertedIndex[keyword] ?: mutableListOf()
+                println("Enter a name or email to search all suitable people.")
+                val keywords = scanner.nextLine().split(' ')
+
+                val found = invertedIndex[keywords, strategy]
 
                 if (found.isEmpty()) {
                     println("No matching people found.")
                 } else {
+                    println("${found.size} persons found:")
                     for (lineIndex in found) {
                         println(persons[lineIndex])
                     }
@@ -40,20 +44,64 @@ fun main(args: Array<String>) {
     }
 }
 
-private fun MutableList<String>.init(): Map<String, MutableList<Int>> {
-    val indices = mutableMapOf<String, MutableList<Int>>()
+private operator fun Map<Int, MutableList<Word>>.get(keywords: List<String>, strategy: Strategy): List<Int> {
+    val found = mutableListOf<Int>()
+    val words = keywords.map { Word(it) }
+
+    return when (strategy) {
+        Strategy.ALL -> found.also {
+            for (lineEntry in this) {
+                if (lineEntry.value.containsAll(words)) {
+                    it.add(lineEntry.key)
+                }
+            }
+        }
+
+        Strategy.ANY -> found.also {
+            for (lineEntry in this) {
+                if (lineEntry.value.any { value -> value in words }) {
+                    it.add(lineEntry.key)
+                }
+            }
+        }
+
+        Strategy.NONE -> found.also {
+            for (lineEntry in this) {
+                if (lineEntry.value.all { value -> value !in words }) {
+                    it.add(lineEntry.key)
+                }
+            }
+        }
+    }
+}
+
+private fun MutableList<String>.init(): Map<Int, MutableList<Word>> {
+    val indices = mutableListOf<Word>()
 
     forEachIndexed { index, line ->
-        for (word in line.split(Regex("\\s+"))) {
+        for (word in line.split(Regex("\\s+")).map { Word(it) }) {
             if (word in indices) {
-                indices[word]!!.add(index)
+                indices[indices.indexOf(word)].lines.add(index)
             } else {
-                indices[word] = mutableListOf(index)
+                word.lines.add(index)
+                indices.add(word)
             }
         }
     }
 
-    return indices.toMap()
+    val lines = mutableMapOf<Int, MutableList<Word>>()
+
+    for (word in indices) {
+        for (line in word.lines) {
+            if (line in lines) {
+                lines[line]!!.add(word)
+            } else {
+                lines[line] = mutableListOf(word)
+            }
+        }
+    }
+
+    return lines.toMap()
 }
 
 fun menu(): Int {
@@ -78,4 +126,23 @@ fun menu(): Int {
     } while (choose == -1)
 
     return choose
+}
+
+enum class Strategy { ALL, ANY, NONE }
+
+data class Word(val word: String, val lines: MutableList<Int> = mutableListOf()) {
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Word
+
+        if (!word.equals(other.word, true)) return false
+
+        return true
+    }
+
+    override fun hashCode(): Int {
+        return word.hashCode()
+    }
 }

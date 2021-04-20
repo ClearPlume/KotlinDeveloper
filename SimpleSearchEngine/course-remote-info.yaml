@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/271583/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 20 Apr 2021 01:28:13 UTC
+update_date: Tue, 20 Apr 2021 11:30:16 UTC
 stages:
 - id: 494
   step: 7817
@@ -22,7 +22,7 @@ stages:
   is_completed: true
 - id: 499
   step: 7822
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Modulo division
