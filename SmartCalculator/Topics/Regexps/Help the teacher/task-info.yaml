@@ -1,0 +1,18 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun main() {
+        val report = readLine()!!
+        //write your code here.
+
+
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10729#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 21 Apr 2021 06:22:38 UTC
+record: -1
