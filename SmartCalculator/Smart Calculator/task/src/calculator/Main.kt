@@ -1,7 +1,7 @@
 package calculator
 
+import java.math.BigInteger
 import java.util.*
-import kotlin.math.pow
 
 private val variableRegex = Regex("[a-zA-Z]+")
 private val assignmentRegex = Regex("[a-zA-Z]+ *= *(?:[a-zA-Z]+|[+-]*\\d+)")
@@ -9,7 +9,7 @@ private val expressionRegex =
     Regex("\\(*(?:(?:[-+]*\\d+)|[a-zA-Z]+)\\)*(?: *\\(*(?:[+-]+|[*/^])\\)* *\\(*(?:(?:[-+]*\\d+)|[a-zA-Z]+)\\)*)*")
 val operatorRegex = Regex("[+-]+|[*/^()]")
 
-private val variables = mutableMapOf<String, Int>()
+private val variables = mutableMapOf<String, BigInteger>()
 
 fun main() {
     while (true) {
@@ -114,12 +114,12 @@ private fun Char.isNum(): Boolean {
 /**
  * For assignment statement, cast from numeric string to a number, because there may be these "numbers": -10 10 +10 --10 ++10 -+-10 etc
  */
-private fun String.toInt(): Int {
+private fun String.toInt(): BigInteger {
     val splitPoint = indexOfLast { it == '+' || it == '-' }
     val modifier = if (splitPoint != -1) Operator.checkPlusMinus(substring(0 until splitPoint)) else null
-    val number = Integer.parseInt(substring(if (splitPoint == -1) 0 else splitPoint))
+    val number = BigInteger(substring(if (splitPoint == -1) 0 else splitPoint))
 
-    return if (modifier == Operator.SUBTRACTION) number * -1 else number
+    return if (modifier == Operator.SUBTRACTION) number * BigInteger("-1") else number
 }
 
 /**
@@ -267,7 +267,7 @@ private fun infixToPost(expression: List<ExpressionUnit>): List<ExpressionUnit> 
     return result.toList()
 }
 
-private fun postfixCalculate(expression: List<ExpressionUnit>): Int {
+private fun postfixCalculate(expression: List<ExpressionUnit>): BigInteger {
     val calculate = Stack<ExpressionUnit>()
 
     for (unit in expression) {
@@ -277,7 +277,7 @@ private fun postfixCalculate(expression: List<ExpressionUnit>): Int {
         }
     }
 
-    return calculate.pop().literal as Int
+    return calculate.pop().literal as BigInteger
 }
 
 /**
@@ -302,7 +302,7 @@ private open class ExpressionUnit(val priority: Int, open val literal: Any)
 /**
  * 10, 20, 30...
  */
-private class Number(override val literal: Int) : ExpressionUnit(0, literal) {
+private class Number(override val literal: BigInteger) : ExpressionUnit(0, literal) {
     operator fun plus(other: Number) = literal + other.literal
 
     operator fun minus(other: Number) = literal - other.literal
@@ -311,14 +311,7 @@ private class Number(override val literal: Int) : ExpressionUnit(0, literal) {
 
     operator fun div(other: Number) = literal / other.literal
 
-    infix fun pow(other: Number) = literal.pow(other.literal)
-}
-
-private fun Int.pow(other: Int): Int {
-    val a = this.toDouble()
-    val b = other.toDouble()
-
-    return a.pow(b).toInt()
+    infix fun pow(other: Number): BigInteger = literal.pow(other.literal.toInt())
 }
 
 /**
