@@ -24,3 +24,5 @@
 ## 第十项目：[ParkingLot](https://github.com/ClearPlume/KotlinDeveloper/tree/ParkingLot)
 
 ## 第十一项目：[SmartCalculator](https://github.com/ClearPlume/KotlinDeveloper/tree/SmartCalculator)
+
+## 第十二项目：[NumericMatrixProcessor](https://github.com/ClearPlume/KotlinDeveloper/tree/NumericMatrixProcessor)
