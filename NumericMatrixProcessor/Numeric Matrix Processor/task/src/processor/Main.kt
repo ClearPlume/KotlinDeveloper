@@ -11,12 +11,10 @@ fun main() {
     val m1 = Matrix(m1r, m1c)
     m1.readFromConsole()
 
-    val (m2r, m2c) = readLine()!!.split(" ").map { it.toInt() }
-    val m2 = Matrix(m2r, m2c)
-    m2.readFromConsole()
+    val c = readLine()!!.toInt()
 
-    val ms = m1 + m2
-    println(ms ?: "ERROR")
+    val ms = m1 * c
+    println(ms)
 }
 
 private fun <T> Array<Array<T>>.copy(other: Array<Array<T>>) {
@@ -46,6 +44,18 @@ class Matrix(private val row: Int, private val col: Int) {
         }
 
         return Matrix(row, col, dataSum)
+    }
+
+    operator fun times(c: Int): Matrix {
+        val dataPro = Array(row) { Array(col) { -1 } }
+
+        for (r in 0 until row) {
+            for (_c in 0 until col) {
+                dataPro[r][_c] = data[r][_c] * c
+            }
+        }
+
+        return Matrix(row, col, dataPro)
     }
 
     override fun toString(): String {
