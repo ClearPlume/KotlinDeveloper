@@ -1,0 +1,19 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    val captain = Pirate("Hector Barbossa")
+    println(captain.name) // Do not touch this line
+    // put your code here
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11244#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    main.kt:9:1: error: cannot assign to 'name': the setter is private in 'Pirate'
+    captain.name = "Jack Sparrow"
+    ^
+  time: Fri, 23 Apr 2021 06:43:51 UTC
+record: -1
