@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/271195/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Fri, 23 Apr 2021 11:40:12 UTC
+update_date: Sat, 24 Apr 2021 02:13:28 UTC
 stages:
 - id: 480
   step: 7786
@@ -16,7 +16,7 @@ stages:
   is_completed: true
 - id: 483
   step: 7789
-  is_completed: false
+  is_completed: true
 - id: 484
   step: 7790
   is_completed: false
@@ -164,3 +164,22 @@ topics:
   5:
   - title: The Math library
     theory_id: 12532
+  2:
+  - title: Matrix Multiplication
+    theory_id: 7372
+  - title: IDE
+    theory_id: 10996
+  - title: Introduction to OOP
+    theory_id: 3614
+  - title: IntelliJ IDEA
+    theory_id: 3801
+  - title: IDEA Basics
+    theory_id: 5819
+  - title: EduTools
+    theory_id: 5839
+  - title: Floating-point types
+    theory_id: 4502
+  - title: When expression
+    theory_id: 4631
+  - title: Declaring classes
+    theory_id: 6200

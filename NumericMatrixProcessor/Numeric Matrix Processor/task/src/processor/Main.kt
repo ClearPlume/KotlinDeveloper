@@ -64,6 +64,18 @@ fun main() {
                     println("The operation cannot be performed.")
                 }
             }
+            4 -> {
+                val type = transposeMenu()
+
+                print("Enter size of matrix: ")
+                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
+                val m1 = Matrix(m1r, m1c)
+                println("Enter matrix:")
+                m1.readFromConsole()
+
+                m1.transpose(type)
+                println(m1)
+            }
         }
         choice = menu()
     }
@@ -75,6 +87,7 @@ private fun menu(): Int {
         1. Add matrices
         2. Multiply matrix by a constant
         3. Multiply matrices
+        4. Transpose matrix
         0. Exit
     """.trimIndent()
     )
@@ -83,7 +96,29 @@ private fun menu(): Int {
     val scanner = Scanner(System.`in`)
     var choice = scanner.nextInt()
 
-    while (choice !in 0..3) {
+    while (choice !in 0..4) {
+        println("Invalid choice, try again!")
+        choice = scanner.nextInt()
+    }
+
+    return choice
+}
+
+private fun transposeMenu(): Int {
+    println(
+        """
+        1. Main diagonal
+        2. Side diagonal
+        3. Vertical line
+        4. Horizontal line
+    """.trimIndent()
+    )
+
+    print("Your choice:")
+    val scanner = Scanner(System.`in`)
+    var choice = scanner.nextInt()
+
+    while (choice !in 1..4) {
         println("Invalid choice, try again!")
         choice = scanner.nextInt()
     }
@@ -92,7 +127,7 @@ private fun menu(): Int {
 }
 
 private class Matrix(private val row: Int, private val col: Int) {
-    private val data: Array<Array<Number>> = Array(row) { Array(col) { -1L } }
+    private var data: Array<Array<Number>> = Array(row) { Array(col) { -1L } }
 
     constructor(row: Int, col: Int, data: Array<Array<Number>>) : this(row, col) {
         this.data.copy(data)
@@ -145,6 +180,16 @@ private class Matrix(private val row: Int, private val col: Int) {
         return Matrix(row, other.col, dataPro)
     }
 
+    operator fun get(index: Int): Array<Number> {
+        val col = Array<Number>(row) { -1 }
+
+        for (i in 0 until row) {
+            col[i] = data[i][index]
+        }
+
+        return col
+    }
+
     override fun toString(): String {
         val cols = mutableListOf<String>()
 
@@ -158,7 +203,7 @@ private class Matrix(private val row: Int, private val col: Int) {
     fun readFromConsole() {
         for (r in 0 until row) {
             val cols = readLine()!!.split(" ").map {
-                if (it.matches(Regex("\\d+"))) {
+                if (it.matches(Regex("-?\\d+"))) {
                     it.toLong()
                 } else {
                     it.toDouble()
@@ -171,6 +216,61 @@ private class Matrix(private val row: Int, private val col: Int) {
         }
     }
 
+    fun transpose(type: Int) {
+        data = when (MatrixTransposeType.valueOf(type)) {
+            MatrixTransposeType.MAIN -> {
+                val new: Array<Array<Number>> = Array(col) { Array(row) { -1L } }
+
+                new.also {
+                    it.forEachIndexed { r, rows ->
+                        rows.forEachIndexed { c, _ ->
+                            it[r][c] = data[c][r]
+                        }
+                    }
+                }
+            }
+            MatrixTransposeType.SIDE -> {
+                val new: Array<Array<Number>> = Array(col) { Array(row) { -1L } }
+                val reversedRowIndices = (row - 1 downTo 0).toList()
+
+                new.also {
+                    for (r in new.indices) {
+                        it[r] = this[reversedRowIndices[r]].reversedArray()
+                    }
+                }
+            }
+            MatrixTransposeType.VERTICAL -> {
+                val new: Array<Array<Number>> = Array(row) { Array(col) { -1L } }
+
+                new.also {
+                    it.forEachIndexed { r, rows ->
+                        val reversedColIndices = (row - 1 downTo 0).toList()
+                        rows.forEachIndexed { c, _ ->
+                            it[r][c] = data[r][reversedColIndices[c]]
+                        }
+                    }
+                }
+            }
+            MatrixTransposeType.HORIZONTAL -> {
+                val new: Array<Array<Number>> = Array(row) { Array(col) { -1L } }
+                val reversedRowIndices = (row - 1 downTo 0).toList()
+
+                new.also {
+                    for (r in new.indices) {
+                        it[r] = data[reversedRowIndices[r]]
+                    }
+                }
+            }
+        }
+    }
+}
+
+private enum class MatrixTransposeType {
+    MAIN, SIDE, VERTICAL, HORIZONTAL;
+
+    companion object {
+        fun valueOf(type: Int): MatrixTransposeType = values()[type - 1]
+    }
 }
 
 private val <T> Array<Array<T>>.rows: Int
