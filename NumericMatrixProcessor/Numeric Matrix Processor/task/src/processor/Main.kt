@@ -2,88 +2,58 @@ package processor
 
 import java.util.*
 
+val orders = mapOf(0 to "first", 1 to "second", 2 to "third", 3 to "fourth", 4 to "fifth")
+
 fun main() {
     var choice = menu()
 
     while (choice != 0) {
         when (choice) {
             1 -> {
-                print("Enter size of first matrix:")
-                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
-                val m1 = Matrix(m1r, m1c)
-                println("Enter first matrix:")
-                m1.readFromConsole()
+                val (m1, m2) = readMatrices()
 
-                print("Enter size of second matrix:")
-                val (m2r, m2c) = readLine()!!.split(" ").map { it.toInt() }
-                val m2 = Matrix(m2r, m2c)
-                println("Enter first matrix:")
-                m2.readFromConsole()
-
-                val ms = m1 + m2
-                if (ms != null) {
-                    println("The result is:")
-                    println(ms)
-                } else {
-                    println("The operation cannot be performed.")
+                with(m1 + m2) {
+                    if (this != null) {
+                        println("The result is:")
+                        println(this)
+                    } else {
+                        println("The operation cannot be performed.")
+                    }
                 }
             }
             2 -> {
-                print("Enter size of first matrix: ")
-                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
-                val m1 = Matrix(m1r, m1c)
-                println("Enter first matrix:")
-                m1.readFromConsole()
-
+                val m = readMatrix()
                 print("Enter constant:")
                 val cStr = readLine()!!
                 val c: Number = if (cStr.matches(Regex("\\d+"))) cStr.toLong() else cStr.toDouble()
 
-                val ms = m1 * c
+                val ms = m * c
                 println("The result is:")
                 println(ms)
             }
             3 -> {
-                print("Enter size of first matrix:")
-                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
-                val m1 = Matrix(m1r, m1c)
-                println("Enter first matrix:")
-                m1.readFromConsole()
+                val (m1, m2) = readMatrices()
 
-                print("Enter size of second matrix:")
-                val (m2r, m2c) = readLine()!!.split(" ").map { it.toInt() }
-                val m2 = Matrix(m2r, m2c)
-                println("Enter second matrix:")
-                m2.readFromConsole()
-
-                val ms = m1 * m2
-                if (ms != null) {
-                    println("The result is:")
-                    println(ms)
-                } else {
-                    println("The operation cannot be performed.")
+                with(m1 * m2) {
+                    if (this != null) {
+                        println("The result is:")
+                        println(this)
+                    } else {
+                        println("The operation cannot be performed.")
+                    }
                 }
             }
             4 -> {
                 val type = transposeMenu()
+                val m = readMatrix()
 
-                print("Enter size of matrix: ")
-                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
-                val m1 = Matrix(m1r, m1c)
-                println("Enter matrix:")
-                m1.readFromConsole()
-
-                m1.transpose(type)
-                println(m1)
+                m.transpose(type)
+                println(m)
             }
             5 -> {
-                print("Enter size of matrix: ")
-                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
-                val m1 = Matrix(m1r, m1c)
-                println("Enter matrix:")
-                m1.readFromConsole()
+                val m = readMatrix()
                 println("The result is:")
-                println(m1.determinant())
+                println(m.determinant())
             }
         }
         choice = menu()
@@ -134,6 +104,31 @@ private fun transposeMenu(): Int {
     }
 
     return choice
+}
+
+private fun readMatrix(): Matrix {
+    print("Enter size of matrix: ")
+    val (mr, mc) = readLine()!!.split(" ").map { it.toInt() }
+    val m = Matrix(mr, mc)
+    println("Enter matrix:")
+    m.readFromConsole()
+    return m
+}
+
+private fun readMatrices(num: Int = 2): List<Matrix> {
+    val matrices = mutableListOf<Matrix>()
+
+    for (i in 0 until num) {
+        print("Enter ${orders[i]} size of matrix: ")
+        val (mr, mc) = readLine()!!.split(" ").map { it.toInt() }
+
+        println("Enter ${orders[i]} matrix:")
+        val m = Matrix(mr, mc)
+        m.readFromConsole()
+        matrices.add(m)
+    }
+
+    return matrices
 }
 
 private class Matrix(private val row: Int, private val col: Int) {
@@ -283,7 +278,16 @@ private class Matrix(private val row: Int, private val col: Int) {
             return data[0][0] * data[1][1] - data[0][1] * data[1][0]
         }
 
-        return data.minor()
+        var cofactor: Number = if (data[0][0] is Long) 0L else 0.0
+
+        val row = data[0]
+        for (i in row.indices) {
+            if (row[i] != 0) {
+                cofactor += calcDeterminant(data.minor(0, i)) * if (i % 2 == 0) row[i] else -row[i]
+            }
+        }
+
+        return cofactor
     }
 }
 
@@ -295,13 +299,13 @@ private enum class MatrixTransposeType {
     }
 }
 
-private val <T> Array<Array<T>>.rows: Int
+private val Array<Array<Number>>.rows: Int
     get() = size
 
-private val <T> Array<Array<T>>.cols: Int
+private val Array<Array<Number>>.cols: Int
     get() = this[0].size
 
-private fun <T> Array<Array<T>>.copy(other: Array<Array<T>>) {
+private fun Array<Array<Number>>.copy(other: Array<Array<Number>>) {
     for (r in 0 until rows) {
         for (c in 0 until cols) {
             this[r][c] = other[r][c]
@@ -309,14 +313,16 @@ private fun <T> Array<Array<T>>.copy(other: Array<Array<T>>) {
     }
 }
 
-private fun <T> Array<Array<T>>.minor(): Number {
-    var result: Number
+private fun Array<Array<Number>>.minor(x: Int, y: Int): Array<Array<Number>> {
+    val result = mutableListOf<Array<Number>>()
+    val filteredRows = filterIndexed { r, _ -> r != x }
 
-    for (i in this[0].indices) {
-
+    filteredRows.forEach {
+        val filteredCols = it.filterIndexed { c, _ -> c != y }.toTypedArray()
+        result.add(filteredCols)
     }
 
-    TODO()
+    return result.toTypedArray()
 }
 
 private operator fun Number.plus(other: Number): Number {
@@ -352,5 +358,13 @@ private operator fun Number.times(other: Number): Number {
         other as Double
 
         this.toDouble() * other
+    }
+}
+
+private operator fun Number.unaryMinus(): Number {
+    return if (this is Long) {
+        this * -1
+    } else {
+        this.toDouble() * -1
     }
 }
