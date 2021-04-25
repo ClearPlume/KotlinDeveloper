@@ -76,6 +76,15 @@ fun main() {
                 m1.transpose(type)
                 println(m1)
             }
+            5 -> {
+                print("Enter size of matrix: ")
+                val (m1r, m1c) = readLine()!!.split(" ").map { it.toInt() }
+                val m1 = Matrix(m1r, m1c)
+                println("Enter matrix:")
+                m1.readFromConsole()
+                println("The result is:")
+                println(m1.determinant())
+            }
         }
         choice = menu()
     }
@@ -88,6 +97,7 @@ private fun menu(): Int {
         2. Multiply matrix by a constant
         3. Multiply matrices
         4. Transpose matrix
+        5. Calculate a determinant
         0. Exit
     """.trimIndent()
     )
@@ -96,7 +106,7 @@ private fun menu(): Int {
     val scanner = Scanner(System.`in`)
     var choice = scanner.nextInt()
 
-    while (choice !in 0..4) {
+    while (choice !in 0..5) {
         println("Invalid choice, try again!")
         choice = scanner.nextInt()
     }
@@ -263,6 +273,18 @@ private class Matrix(private val row: Int, private val col: Int) {
             }
         }
     }
+
+    fun determinant(): Number {
+        return calcDeterminant(data)
+    }
+
+    fun calcDeterminant(data: Array<Array<Number>>): Number {
+        if (data.size == 2) {
+            return data[0][0] * data[1][1] - data[0][1] * data[1][0]
+        }
+
+        return data.minor()
+    }
 }
 
 private enum class MatrixTransposeType {
@@ -287,6 +309,16 @@ private fun <T> Array<Array<T>>.copy(other: Array<Array<T>>) {
     }
 }
 
+private fun <T> Array<Array<T>>.minor(): Number {
+    var result: Number
+
+    for (i in this[0].indices) {
+
+    }
+
+    TODO()
+}
+
 private operator fun Number.plus(other: Number): Number {
     return if (other is Long) {
         this as Long
@@ -296,6 +328,18 @@ private operator fun Number.plus(other: Number): Number {
         other as Double
 
         this.toDouble() + other
+    }
+}
+
+private operator fun Number.minus(other: Number): Number {
+    return if (other is Long) {
+        this as Long
+
+        this - other
+    } else {
+        other as Double
+
+        this.toDouble() - other
     }
 }
 
