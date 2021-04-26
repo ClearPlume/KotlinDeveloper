@@ -55,6 +55,17 @@ fun main() {
                 println("The result is:")
                 println(m.determinant())
             }
+            6 -> {
+                val m = readMatrix()
+                val mi = m.inverse()
+
+                if (mi != null) {
+                    println("The result is:")
+                    println(mi)
+                } else {
+                    println("This matrix doesn't have an inverse.")
+                }
+            }
         }
         choice = menu()
     }
@@ -68,6 +79,7 @@ private fun menu(): Int {
         3. Multiply matrices
         4. Transpose matrix
         5. Calculate a determinant
+        6. Inverse matrix
         0. Exit
     """.trimIndent()
     )
@@ -76,7 +88,7 @@ private fun menu(): Int {
     val scanner = Scanner(System.`in`)
     var choice = scanner.nextInt()
 
-    while (choice !in 0..5) {
+    while (choice !in 0..6) {
         println("Invalid choice, try again!")
         choice = scanner.nextInt()
     }
@@ -196,13 +208,13 @@ private class Matrix(private val row: Int, private val col: Int) {
     }
 
     override fun toString(): String {
-        val cols = mutableListOf<String>()
+        val rows = mutableListOf<String>()
 
-        for (colArr in data) {
-            cols.add(colArr.joinToString(" "))
+        for (rowArr in data) {
+            rows.add(rowArr.joinToString("  "))
         }
 
-        return cols.joinToString(System.lineSeparator())
+        return rows.joinToString(System.lineSeparator())
     }
 
     fun readFromConsole() {
@@ -221,7 +233,7 @@ private class Matrix(private val row: Int, private val col: Int) {
         }
     }
 
-    fun transpose(type: Int) {
+    fun transpose(type: Int = 1) {
         data = when (MatrixTransposeType.valueOf(type)) {
             MatrixTransposeType.MAIN -> {
                 val new: Array<Array<Number>> = Array(col) { Array(row) { -1L } }
@@ -289,6 +301,48 @@ private class Matrix(private val row: Int, private val col: Int) {
 
         return cofactor
     }
+
+    fun inverse(): Matrix? {
+        val determinant = determinant()
+
+        if (determinant.isZero()) return null
+
+        val mc = cofactors()
+        mc.algebra()
+        mc.transpose()
+
+        return mc * (1.0 / determinant)
+    }
+
+    fun cofactors(): Matrix {
+        val cofactor: Array<Array<Number>> = Array(col) { Array(row) { -1L } }
+
+        for (r in 0 until row) {
+            for (c in 0 until col) {
+                cofactor[r][c] = calcDeterminant(data.minor(r, c))
+            }
+        }
+
+        return Matrix(row, col, cofactor)
+    }
+
+    fun algebra() {
+        for (r in 0 until row) {
+            for (c in 0 until col) {
+                val evenRow = r % 2 == 0
+
+                if (c % 2 == 0) {
+                    if (!evenRow) {
+                        data[r][c] = -data[r][c]
+                    }
+                } else {
+                    if (evenRow) {
+                        data[r][c] = -data[r][c]
+                    }
+                }
+            }
+        }
+    }
 }
 
 private enum class MatrixTransposeType {
@@ -325,6 +379,14 @@ private fun Array<Array<Number>>.minor(x: Int, y: Int): Array<Array<Number>> {
     return result.toTypedArray()
 }
 
+private operator fun Double.div(other: Number): Number {
+    return this / other.toDouble()
+}
+
+private fun Number.isZero(): Boolean {
+    return toDouble() == 0.0
+}
+
 private operator fun Number.plus(other: Number): Number {
     return if (other is Long) {
         this as Long
@@ -333,7 +395,7 @@ private operator fun Number.plus(other: Number): Number {
     } else {
         other as Double
 
-        this.toDouble() + other
+        toDouble() + other
     }
 }
 
@@ -345,7 +407,7 @@ private operator fun Number.minus(other: Number): Number {
     } else {
         other as Double
 
-        this.toDouble() - other
+        toDouble() - other
     }
 }
 
@@ -357,7 +419,7 @@ private operator fun Number.times(other: Number): Number {
     } else {
         other as Double
 
-        this.toDouble() * other
+        toDouble() * other
     }
 }
 
@@ -365,6 +427,6 @@ private operator fun Number.unaryMinus(): Number {
     return if (this is Long) {
         this * -1
     } else {
-        this.toDouble() * -1
+        toDouble() * -1
     }
 }
