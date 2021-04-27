@@ -59,5 +59,8 @@ files:
     \ CheckResult.correct();\n    }\n}\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/86/stages/476/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Tue, 27 Apr 2021 02:02:30 UTC
 record: -1

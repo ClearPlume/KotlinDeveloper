@@ -3,11 +3,11 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/270527/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 01 Jan 1970 00:00:00 UTC
+update_date: Tue, 27 Apr 2021 01:23:49 UTC
 stages:
 - id: 476
   step: 7748
-  is_completed: false
+  is_completed: true
 - id: 477
   step: 7749
   is_completed: false
@@ -150,5 +150,7 @@ topics:
     theory_id: 5161
   - title: 'Hashing: overview'
     theory_id: 9831
+  - title: Hash function
+    theory_id: 10878
   - title: Hash table
-    theory_id: 5364
+    theory_id: 13054
