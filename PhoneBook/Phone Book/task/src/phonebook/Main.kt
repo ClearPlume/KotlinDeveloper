@@ -224,7 +224,7 @@ fun printSortResult(result: Result) {
             result.getTime(
                 Calendar.MILLISECOND
             )
-        }ms."
+        }ms.${if (!result.succeed) " - STOPPED, moved to linear search" else ""}"
     )
 }
 
