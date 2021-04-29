@@ -41,6 +41,41 @@ fun main() {
     printFoundResult(allFindEntryNum, foundResult)
     printSortResult(sortResult)
     printSearchResult(searchResult)
+
+    println()
+    sortResult.list = null
+    searchResult.list = null
+    foundResult.list = null
+    println("Start searching (hash table)...")
+    val phoneMap = mutableMapOf<String, String>()
+    var timeBefore = System.currentTimeMillis()
+
+    for (item in directory) {
+        phoneMap[item.substringAfter(' ')] = item.substringBefore(' ')
+    }
+
+    sortResult.setTime(System.currentTimeMillis() - timeBefore)
+
+    searchResult.entryNum = 0
+    timeBefore = System.currentTimeMillis()
+
+    for (item in find) {
+        if (item in phoneMap) {
+            searchResult.entryNum++
+        }
+    }
+
+    searchResult.setTime(System.currentTimeMillis() - timeBefore)
+
+    printFoundResult(allFindEntryNum, sortResult + searchResult)
+    println(
+        "Creating time: ${sortResult.getTime(Calendar.MINUTE)} min. ${sortResult.getTime(Calendar.SECOND)} sec. ${
+            sortResult.getTime(
+                Calendar.MILLISECOND
+            )
+        }ms."
+    )
+    printSearchResult(searchResult)
 }
 
 fun readFile(name: String): MutableList<String> {
