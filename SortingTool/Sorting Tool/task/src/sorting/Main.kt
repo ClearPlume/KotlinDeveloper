@@ -12,24 +12,42 @@ fun Array<String>.get(name: String, missingArgValue: String): String {
     return (indexOf("-$name")).let { if (it != -1) this[it + 1] else missingArgValue }
 }
 
-fun String.isNumeric(): Boolean {
-    for (c in this) {
-        if (!c.isDigit() && c != '-') return false
+fun MutableList<Pair<SortingElement, Int>>.find(element: SortingElement): Pair<SortingElement, Int>? {
+    var pair: Pair<SortingElement, Int>? = null
+
+    for (item in this) {
+        if (item.first == element) {
+            pair = item
+            break
+        }
     }
 
-    return true
+    return pair
+}
+
+operator fun MutableList<Pair<SortingElement, Int>>.get(element: SortingElement): Int {
+    return find(element)?.second ?: 0
+}
+
+operator fun MutableList<Pair<SortingElement, Int>>.set(element: SortingElement, num: Int) {
+    val pair = find(element)
+
+    if (pair != null) {
+        remove(pair)
+        add(element to num)
+    } else {
+        add(element to 1)
+    }
 }
 
 class SortingTool(args: Array<String>) {
     private val scanner = Scanner(System.`in`)
-    private val data = mutableListOf<SortingElement>()
     private val type = args.get("dataType", "word")
-    private val sort = "-sortIntegers" in args
+    private val sort = args.get("sortingType", "natural")
+    private val data = mutableListOf<SortingElement>()
+    private val dataSorted = mutableListOf<Pair<SortingElement, Int>>()
 
-    private var total: Int
-    private var first: SortingElement
-    private var firstCount: Int
-    private var percent: Int
+    private val total: Int
 
     init {
         when (type) {
@@ -54,64 +72,38 @@ class SortingTool(args: Array<String>) {
 
         sort()
         total = data.size
-        first = data.last()
-        firstCount = maxCount(first)
-        percent = ((firstCount.toDouble() / total) * 100).toInt()
     }
 
     fun info() {
-        when (type) {
-            "long" -> {
-                println(
-                    """
-                    Total numbers: $total.
-                    ${
-                        if (sort) {
-                            "Sorted data: ${data.joinToString(" ")}"
-                        } else {
-                            "The greatest number: $first ($firstCount time(s), $percent%)."
-                        }
-                    }
-                """.trimIndent()
-                )
-            }
-            "line" -> {
-                println(
-                    """
-                    Total lines: $total.
-                    ${
-                        if (sort) {
-                            "Sorted data: ${data.joinToString(" ")}"
-                        } else {
-                            """
-                                The longest line:
-                                $first
-                                ($firstCount times(s), $percent%).
-                            """.trimIndent()
-                        }
-                    }
-                """.trimIndent()
-                )
-            }
-            "word" -> {
-                println(
-                    """
-                    Total words: $total.
-                    ${
-                        if (sort) {
-                            "Sorted data: ${data.joinToString(" ")}"
-                        } else {
-                            "The longest word: $first ($firstCount time(s), $percent%)."
-                        }
-                    }
-                """.trimIndent()
-                )
+        println(
+            "Total ${
+                when (type) {
+                    "long" -> "numbers"
+                    "line" -> "lines"
+                    else -> "words"
+                }
+            }: $total."
+        )
+
+        when (sort) {
+            "natural" -> println("Sorted data: ${data.joinToString(if (type == "line") "\n" else " ")}")
+            "byCount" -> for (item in dataSorted) {
+                println("${item.first}: ${item.second} time(s), ${((item.second.toDouble() / total) * 100).toInt()}%")
             }
         }
     }
 
     private fun sort() {
-        quickSort0(0, data.lastIndex)
+        when (sort) {
+            "natural" -> quickSort0(0, data.lastIndex)
+            "byCount" -> {
+                for (item in data) {
+                    dataSorted[item] = dataSorted[item] + 1
+                }
+
+                dataSorted.sortWith(compareBy({ it.second }, { it.first }))
+            }
+        }
     }
 
     private fun quickSort0(left: Int, right: Int) {
@@ -144,18 +136,6 @@ class SortingTool(args: Array<String>) {
         quickSort0(left, pivot - 1)
         quickSort0(pivot + 1, right)
     }
-
-    private fun maxCount(max: SortingElement): Int {
-        var count = 0
-
-        for (item in data) {
-            if (item == max) {
-                count++
-            }
-        }
-
-        return count
-    }
 }
 
 abstract class SortingElement(open val ele: Any) : Comparable<SortingElement>
@@ -163,7 +143,7 @@ abstract class SortingElement(open val ele: Any) : Comparable<SortingElement>
 class Long(override val ele: kotlin.Long) : SortingElement(ele) {
     override fun compareTo(other: SortingElement): Int {
         other as Long
-        return if (ele < other.ele) -1 else if (ele == other.ele) 0 else 1
+        return ele.compareTo(other.ele)
     }
 
     override fun equals(other: Any?): Boolean {
@@ -189,7 +169,7 @@ class Long(override val ele: kotlin.Long) : SortingElement(ele) {
 class Line(override val ele: String) : SortingElement(ele) {
     override fun compareTo(other: SortingElement): Int {
         other as Line
-        return ele.length - other.ele.length
+        return ele.compareTo(other.ele)
     }
 
     override fun equals(other: Any?): Boolean {
@@ -215,12 +195,7 @@ class Line(override val ele: String) : SortingElement(ele) {
 class Word(override val ele: String) : SortingElement(ele) {
     override fun compareTo(other: SortingElement): Int {
         other as Word
-        return if (!ele.isNumeric()) {
-            ele.length - other.ele.length
-        } else {
-            val numSort = ele.toLong() - other.ele.toLong()
-            if (numSort > 0) 1 else if (numSort < 0) -1 else 0
-        }
+        return ele.compareTo(other.ele)
     }
 
     override fun equals(other: Any?): Boolean {
