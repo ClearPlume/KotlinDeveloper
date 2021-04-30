@@ -4,7 +4,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
     // write your code here
-    val sortingTool = SortingTool(args.get("dataType", "word"))
+    val sortingTool = SortingTool(args)
     sortingTool.info()
 }
 
@@ -12,9 +12,19 @@ fun Array<String>.get(name: String, missingArgValue: String): String {
     return (indexOf("-$name")).let { if (it != -1) this[it + 1] else missingArgValue }
 }
 
-class SortingTool(private val type: String) {
+fun String.isNumeric(): Boolean {
+    for (c in this) {
+        if (!c.isDigit() && c != '-') return false
+    }
+
+    return true
+}
+
+class SortingTool(args: Array<String>) {
     private val scanner = Scanner(System.`in`)
     private val data = mutableListOf<SortingElement>()
+    private val type = args.get("dataType", "word")
+    private val sort = "-sortIntegers" in args
 
     private var total: Int
     private var first: SortingElement
@@ -42,8 +52,9 @@ class SortingTool(private val type: String) {
             }
         }
 
+        sort()
         total = data.size
-        first = max()
+        first = data.last()
         firstCount = maxCount(first)
         percent = ((firstCount.toDouble() / total) * 100).toInt()
     }
@@ -54,7 +65,13 @@ class SortingTool(private val type: String) {
                 println(
                     """
                     Total numbers: $total.
-                    The greatest number: $first ($firstCount time(s), $percent%).
+                    ${
+                        if (sort) {
+                            "Sorted data: ${data.joinToString(" ")}"
+                        } else {
+                            "The greatest number: $first ($firstCount time(s), $percent%)."
+                        }
+                    }
                 """.trimIndent()
                 )
             }
@@ -62,9 +79,17 @@ class SortingTool(private val type: String) {
                 println(
                     """
                     Total lines: $total.
-                    The longest line:
-                    $first
-                    ($firstCount time(s), $percent%).
+                    ${
+                        if (sort) {
+                            "Sorted data: ${data.joinToString(" ")}"
+                        } else {
+                            """
+                                The longest line:
+                                $first
+                                ($firstCount times(s), $percent%).
+                            """.trimIndent()
+                        }
+                    }
                 """.trimIndent()
                 )
             }
@@ -72,23 +97,52 @@ class SortingTool(private val type: String) {
                 println(
                     """
                     Total words: $total.
-                    The longest word: $first ($firstCount time(s), $percent%).
+                    ${
+                        if (sort) {
+                            "Sorted data: ${data.joinToString(" ")}"
+                        } else {
+                            "The longest word: $first ($firstCount time(s), $percent%)."
+                        }
+                    }
                 """.trimIndent()
                 )
             }
         }
     }
 
-    private fun max(): SortingElement {
-        var max = data[0]
+    private fun sort() {
+        quickSort0(0, data.lastIndex)
+    }
 
-        for (i in 1..data.lastIndex) {
-            if (max < data[i]) {
-                max = data[i]
+    private fun quickSort0(left: Int, right: Int) {
+        if (right <= left) return
+
+        var pivot = right
+        var cursor = left
+        var direction = true
+
+        do {
+            if (direction) {
+                if (data[cursor] > data[pivot]) {
+                    data[cursor] = data[pivot].also { data[pivot] = data[cursor] }
+                    cursor = pivot.also { pivot = cursor }
+
+                    direction = !direction
+                }
+            } else {
+                if (data[cursor] < data[pivot]) {
+                    data[cursor] = data[pivot].also { data[pivot] = data[cursor] }
+                    cursor = pivot.also { pivot = cursor }
+
+                    direction = !direction
+                }
             }
-        }
 
-        return max
+            cursor += if (direction) 1 else -1
+        } while (cursor != pivot)
+
+        quickSort0(left, pivot - 1)
+        quickSort0(pivot + 1, right)
     }
 
     private fun maxCount(max: SortingElement): Int {
@@ -161,7 +215,12 @@ class Line(override val ele: String) : SortingElement(ele) {
 class Word(override val ele: String) : SortingElement(ele) {
     override fun compareTo(other: SortingElement): Int {
         other as Word
-        return ele.length - other.ele.length
+        return if (!ele.isNumeric()) {
+            ele.length - other.ele.length
+        } else {
+            val numSort = ele.toLong() - other.ele.toLong()
+            if (numSort > 0) 1 else if (numSort < 0) -1 else 0
+        }
     }
 
     override fun equals(other: Any?): Boolean {
