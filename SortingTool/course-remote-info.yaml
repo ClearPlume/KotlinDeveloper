@@ -22,7 +22,7 @@ stages:
   is_completed: true
 - id: 579
   step: 9628
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Modulo division

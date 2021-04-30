@@ -1,16 +1,22 @@
 package sorting
 
+import java.io.File
+import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.io.PrintStream
 import java.util.*
+import java.util.concurrent.TimeUnit
 import kotlin.math.roundToInt
 import kotlin.system.exitProcess
 
-val commandList = arrayOf("sortingType", "dataType")
+val commandList = arrayOf("sortingType", "dataType", "inputFile", "outputFile")
 
 fun main(args: Array<String>) {
     // write your code here
     val argMap = args.parse()
     val sortingTool = SortingTool(argMap)
     sortingTool.info()
+    sortingTool.closeStream()
 }
 
 fun Array<String>.parse(): Map<String, String> {
@@ -87,9 +93,12 @@ fun MutableList<Pair<SortingElement, Int>>.find(element: SortingElement): Pair<S
 }
 
 class SortingTool(args: Map<String, String>) {
-    private val scanner = Scanner(System.`in`)
+    private val scanner: Scanner
+    private val printer: PrintStream
     private val type = args["dataType"] ?: "word"
     private val sort = args["sortingType"] ?: "natural"
+    private val input = args["inputFile"]
+    private val output = args["outputFile"]
     private val data = mutableListOf<SortingElement>()
     private val dataSorted = mutableListOf<Pair<SortingElement, Int>>()
 
@@ -104,6 +113,18 @@ class SortingTool(args: Map<String, String>) {
         if (sort !in arrayOf("natural", "byCount")) {
             println("No sorting type defined!")
             exitProcess(0)
+        }
+
+        scanner = if (input != null) {
+            Scanner(FileInputStream(File(input)))
+        } else {
+            Scanner(System.`in`)
+        }
+
+        printer = if (output != null) {
+            PrintStream(FileOutputStream(File(output)))
+        } else {
+            PrintStream(System.out)
         }
 
         if (type != "line") {
@@ -151,6 +172,10 @@ class SortingTool(args: Map<String, String>) {
         }
     }
 
+    fun closeStream() {
+        scanner.close()
+    }
+
     private fun sort() {
         when (sort) {
             "natural" -> quickSort0(0, data.lastIndex)
@@ -193,6 +218,10 @@ class SortingTool(args: Map<String, String>) {
 
         quickSort0(left, pivot - 1)
         quickSort0(pivot + 1, right)
+    }
+
+    private fun println(msg: String) {
+        printer.println(msg)
     }
 }
 
