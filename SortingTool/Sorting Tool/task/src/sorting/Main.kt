@@ -5,7 +5,6 @@ import java.util.*
 fun main(args: Array<String>) {
     // write your code here
     val sortingTool = SortingTool(args.get("dataType", "word"))
-    sortingTool.init()
     sortingTool.info()
 }
 
@@ -17,12 +16,12 @@ class SortingTool(private val type: String) {
     private val scanner = Scanner(System.`in`)
     private val data = mutableListOf<SortingElement>()
 
-    private var total: Int = -1
-    private var first: SortingElement? = null
-    private var firstCount: Int = -1
-    private var percent: Int = -1
+    private var total: Int
+    private var first: SortingElement
+    private var firstCount: Int
+    private var percent: Int
 
-    fun init() {
+    init {
         when (type) {
             "long" -> {
                 while (scanner.hasNextLong()) {
@@ -35,17 +34,17 @@ class SortingTool(private val type: String) {
                 }
             }
             "word" -> {
+                // \\S: All non blank characters
+                // +: At least one character
                 while (scanner.hasNext("\\S+")) {
                     data.add(Word(scanner.next("\\S+")))
                 }
             }
         }
 
-        data.sortDescending()
-
         total = data.size
-        first = data.first()
-        firstCount = data.filter { it == first }.count()
+        first = max()
+        firstCount = maxCount(first)
         percent = ((firstCount.toDouble() / total) * 100).toInt()
     }
 
@@ -78,6 +77,30 @@ class SortingTool(private val type: String) {
                 )
             }
         }
+    }
+
+    private fun max(): SortingElement {
+        var max = data[0]
+
+        for (i in 1..data.lastIndex) {
+            if (max < data[i]) {
+                max = data[i]
+            }
+        }
+
+        return max
+    }
+
+    private fun maxCount(max: SortingElement): Int {
+        var count = 0
+
+        for (item in data) {
+            if (item == max) {
+                count++
+            }
+        }
+
+        return count
     }
 }
 
