@@ -66,8 +66,14 @@ files:
     \ }\n    \n}\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/83/stages/458/implement#comment
-status: Solved
+status: Failed
 feedback:
-  message: Congratulations!
-  time: Mon, 03 May 2021 08:44:24 UTC
-record: -1
+  message: "Exception in test #1\n\njava.lang.NumberFormatException: For input string:\
+    \ &quot;print()&quot;\r\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\r\
+    \n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\r\n\tat java.base/java.lang.Integer.parseInt(Integer.java:770)\r\
+    \n\tat flashcards.MainKt.main(Main.kt:9)\r\n\tat flashcards.MainKt.main(Main.kt)\n\
+    \nPlease find below the output of your program during this failed test.\nNote\
+    \ that the &#39;&gt;&#39; character indicates the beginning of the input line.\n\
+    \n---\n\nInput the number of cards:\n&gt; print()"
+  time: Mon, 03 May 2021 09:06:46 UTC
+record: 2
