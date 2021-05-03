@@ -244,5 +244,8 @@ files:
     \ meet\"\n        );\n    }\n    \n}\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/83/stages/460/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 03 May 2021 10:33:43 UTC
 record: -1
