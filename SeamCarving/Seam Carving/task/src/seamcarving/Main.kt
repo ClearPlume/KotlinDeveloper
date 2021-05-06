@@ -1,29 +1,45 @@
 package seamcarving
 
 import java.awt.Color
-import java.awt.image.BufferedImage
 import java.io.File
-import java.util.*
 import javax.imageio.ImageIO
 
-fun main() {
-    val scanner = Scanner(System.`in`)
+const val IN = "in"
+const val OUT = "out"
 
-    println("Enter rectangle width:")
-    val width = scanner.nextInt()
+val validCommands = arrayOf(IN, OUT)
 
-    println("Enter rectangle height:")
-    val height = scanner.nextInt()
+fun main(args: Array<String>) {
+    val commands = args.parse()
 
-    val image = BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR)
+    val img = ImageIO.read(File(commands[IN]!!))
 
-    println("Enter output image name:")
-    val imgName = scanner.next()
+    for (y in 0 until img.height) {
+        for (x in 0 until img.width) {
+            val color = Color(img.getRGB(x, y))
+            img.setRGB(x, y, color.negative().rgb)
+        }
+    }
 
-    val graphics = image.createGraphics()
-    graphics.color = Color.RED
-    graphics.drawLine(0, 0, width - 1, height - 1)
-    graphics.drawLine(width - 1, 0, 0, height - 1)
-
-    ImageIO.write(image, "png", File(imgName))
+    ImageIO.write(img, "png", File(commands[OUT]!!))
 }
+
+fun Array<String>.parse(): Map<String, String> {
+    val commands = mutableMapOf<String, String>()
+
+    for (i in indices) {
+        if (this[i].startsWith('-')) {
+            if (this[i].substring(1) in validCommands) {
+                if (i < lastIndex) {
+                    if (this[i + 1].matches(Regex("[a-zA-Z0-9_\\-/]+\\.[a-zA-Z]{1,5}"))) {
+                        commands[this[i].substring(1)] = this[i + 1]
+                    }
+                }
+            }
+        }
+    }
+
+    return commands
+}
+
+fun Color.negative() = Color(255 - red, 255 - green, 255 - blue)
