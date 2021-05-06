@@ -639,5 +639,8 @@ files:
     \    );\n    }\n    \n}\n"
   learner_created: false
 feedback_link: https://hyperskill.org/projects/83/stages/463/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Thu, 06 May 2021 08:34:03 UTC
+record: 7

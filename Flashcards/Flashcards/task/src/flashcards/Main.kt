@@ -5,12 +5,22 @@ import java.io.FileOutputStream
 import java.io.PrintStream
 import java.util.*
 
+const val IMPORT = "import"
+const val EXPORT = "export"
+
 val scanner = Scanner(System.`in`)
+val validCommands = arrayOf(IMPORT, EXPORT)
 
 val cards = mutableListOf<Card>()
 val logs = mutableListOf<String>()
 
-fun main() {
+fun main(args: Array<String>) {
+    val commands = args.parse()
+
+    if (IMPORT in commands) {
+        import(commands[IMPORT]!!)
+    }
+
     while (true) {
         when (getAction()) {
             "add" -> {
@@ -48,38 +58,12 @@ fun main() {
             }
             "import" -> {
                 println("File name:")
-                val fileName = nextLine(scanner)
-                val file = File(fileName)
-
-                if (file.exists()) {
-                    var importedNum = 0
-
-                    file.forEachLine {
-                        val (term, definition, mistakes) = it.split(Regex("[=:]"))
-                        cards[term, definition] = mistakes.toInt()
-                        importedNum++
-                    }
-
-                    println("$importedNum cards have been loaded.")
-                } else {
-                    println("File not found.")
-                }
-
+                import(nextLine(scanner))
                 println()
             }
             "export" -> {
                 println("File name:")
-                val file = nextLine(scanner)
-                val printer = PrintStream(FileOutputStream(file))
-
-                for (card in cards) {
-                    printer.println("${card.term}=${card.definition}:${card.mistakes}")
-                }
-
-                printer.flush()
-                printer.close()
-                println("${cards.size} cards have been saved.")
-
+                export(nextLine(scanner))
                 println()
             }
             "ask" -> {
@@ -106,6 +90,10 @@ fun main() {
                 println()
             }
             "exit" -> {
+                if (EXPORT in commands) {
+                    export(commands[EXPORT]!!)
+                }
+
                 println("Bye bye!")
                 break
             }
@@ -160,6 +148,36 @@ fun getAction(): String {
     return nextLine(scanner)
 }
 
+fun import(fileName: String) {
+    val file = File(fileName)
+
+    if (file.exists()) {
+        var importedNum = 0
+
+        file.forEachLine {
+            val (term, definition, mistakes) = it.split(Regex("[=:]"))
+            cards[term, definition] = mistakes.toInt()
+            importedNum++
+        }
+
+        println("$importedNum cards have been loaded.")
+    } else {
+        println("File not found.")
+    }
+}
+
+fun export(file: String) {
+    val printer = PrintStream(FileOutputStream(file))
+
+    for (card in cards) {
+        printer.println("${card.term}=${card.definition}:${card.mistakes}")
+    }
+
+    printer.flush()
+    printer.close()
+    println("${cards.size} cards have been saved.")
+}
+
 fun println() {
     logs.add(System.lineSeparator())
     kotlin.io.println()
@@ -174,6 +192,24 @@ fun nextLine(scanner: Scanner): String {
     val nextLine = scanner.nextLine()
     logs.add(nextLine)
     return nextLine
+}
+
+fun Array<String>.parse(): Map<String, String> {
+    val commands = mutableMapOf<String, String>()
+
+    for (i in indices) {
+        if (this[i].startsWith('-')) {
+            if (this[i].substring(1) in validCommands) {
+                if (i < lastIndex) {
+                    if (this[i + 1].matches(Regex("[a-zA-Z0-9_]+\\.[a-zA-Z]{1,5}"))) {
+                        commands[this[i].substring(1)] = this[i + 1]
+                    }
+                }
+            }
+        }
+    }
+
+    return commands
 }
 
 fun MutableList<Card>.remove(term: String) {
