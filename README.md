@@ -34,3 +34,5 @@
 ## 第十五项目：[SortingTool](https://github.com/ClearPlume/KotlinDeveloper/tree/SortingTool)
 
 ## 第十六项目：[Flashcards](https://github.com/ClearPlume/KotlinDeveloper/tree/Flashcards)
+
+## 第十七项目：[SeamCarving](https://github.com/ClearPlume/KotlinDeveloper/tree/SeamCarving)
