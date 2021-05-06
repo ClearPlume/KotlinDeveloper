@@ -166,8 +166,8 @@ fun import(fileName: String) {
     }
 }
 
-fun export(file: String) {
-    val printer = PrintStream(FileOutputStream(file))
+fun export(fileName: String) {
+    val printer = PrintStream(FileOutputStream(fileName))
 
     for (card in cards) {
         printer.println("${card.term}=${card.definition}:${card.mistakes}")
