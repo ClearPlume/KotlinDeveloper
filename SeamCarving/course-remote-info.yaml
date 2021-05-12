@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/312105/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Fri, 07 May 2021 07:06:46 UTC
+update_date: Wed, 12 May 2021 06:49:11 UTC
 stages:
 - id: 550
   step: 9015
@@ -182,6 +182,22 @@ topics:
   - title: Secondary constructor
     theory_id: 10746
   3:
+  - title: Optimization problems
+    theory_id: 12180
+  - title: Basics of sets
+    theory_id: 8220
+  - title: Basics of functions
+    theory_id: 8857
+  - title: A limit of a function
+    theory_id: 9941
+  - title: Operations with limits
+    theory_id: 11627
+  - title: 'Limits: indeterminate forms'
+    theory_id: 10262
+  - title: Introduction to derivatives
+    theory_id: 10822
+  - title: Derivatives of polynomials
+    theory_id: 11408
   - title: Computer algorithms
     theory_id: 4953
   - title: The big O notation
