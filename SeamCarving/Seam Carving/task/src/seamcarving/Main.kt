@@ -3,7 +3,6 @@ package seamcarving
 import java.awt.Color
 import java.awt.image.BufferedImage
 import java.io.File
-import java.util.*
 import javax.imageio.ImageIO
 import kotlin.math.sqrt
 
@@ -66,13 +65,13 @@ fun BufferedImage.energies(): Array<Array<Double>> {
         val yD: Int
 
         when (x) {
-            0 -> {
-                xL = 0
-                xR = 2
-            }
             width - 1 -> {
                 xL = x - 2
                 xR = x
+            }
+            0 -> {
+                xL = 0
+                xR = 2
             }
             else -> {
                 xL = x - 1
@@ -151,95 +150,60 @@ fun energies(img: BufferedImage, imgA: BufferedImage) {
 
 fun seam(img: BufferedImage, imgA: BufferedImage) {
     val energies = img.energies()
+    val seamEnergies = Array(energies.row) { Array(energies.col) { SeamEnergyWithBackPointer() } }
     img.exec { x, y, color -> imgA[x, y] = color }
-    val shortestPath = mutableListOf<Graph.Node>()
 
-    for (pixelIndex in energies[0].indices) {
-        val graph = Graph(energies)
-        val pixel = graph.data[0][pixelIndex]
-        pixel.distance = 0.0
-        graph.dijkstra(pixel.x, pixel.y)
-        graph.data.last().sortWith(compareBy({ it.distance }, { it.weight }))
-        shortestPath.add(graph.data.last().first())
+    for (col in energies[0].indices) {
+        seamEnergies[0][col].energy = energies[0][col]
+        seamEnergies[0][col].x = col
     }
 
-    shortestPath.sortWith(compareBy({ it.distance }, { it.weight }))
-    var e = shortestPath.first()
+    for (row in 1 until energies.row) {
+        for (col in 0 until energies.col) {
+            val left = if (col == 0) {
+                0
+            } else {
+                col - 1
+            }
+
+            val right: Int = if (col == energies.col - 1) {
+                energies.col - 1
+            } else {
+                col + 1
+            }
+
+            val prevRowSeams = mutableMapOf<Int, Double>()
+
+            for (i in left..right) {
+                prevRowSeams[i] = seamEnergies[row - 1][i].energy + energies[row][col]
+            }
+
+            val backPointer = prevRowSeams.minByOrNull { it.value }!!
+            seamEnergies[row][col].energy = backPointer.value
+            seamEnergies[row][col].prevX = backPointer.key
+            seamEnergies[row][col].x = col
+        }
+    }
+
+    var seam = seamEnergies.last().minByOrNull { it.energy }!!
+    var row = energies.row - 1
 
     do {
-        imgA[e.x, e.y] = Color.RED
-        e = e.prev
-    } while (!e.weight.isNaN())
+        imgA[seam.x, row--] = Color.RED
+        seam = if (row < 0) {
+            seamEnergies[0][seam.x]
+        } else {
+            seamEnergies[row][seam.prevX]
+        }
+    } while (row >= 0)
 }
 
-class Graph(energies: Array<Array<Double>>) {
-    val none = Node(-1, -1, Double.NaN)
-    val data = Array(energies.row) { row -> Array(energies.col) { col -> Node(col, row, energies[row][col]) } }
+class SeamEnergyWithBackPointer {
+    var energy = 0.0
+    var prevX = -1
+    var x = -1
 
-    inner class Node(val x: Int, val y: Int, var weight: Double, var explored: Boolean = false) {
-        var prev = none
-        var distance = Double.POSITIVE_INFINITY
-
-        fun getNeighbor(): MutableList<Node> {
-            val neighbors = mutableListOf<Node>()
-
-            if (y + 1 < data.row && x - 1 >= 0 && !data[y + 1][x - 1].explored) {
-                neighbors.add(data[y + 1][x - 1])
-            }
-
-            if (y + 1 < data.row && !data[y + 1][x].explored) {
-                neighbors.add(data[y + 1][x])
-            }
-
-            if (y + 1 < data.row && x + 1 < data.col && !data[y + 1][x + 1].explored) {
-                neighbors.add(data[y + 1][x + 1])
-            }
-
-            return neighbors
-        }
-
-        override fun toString(): String {
-            return "x: $x, y: $y, weight: $weight, dis: $distance"
-        }
-
-        override fun equals(other: Any?): Boolean {
-            if (this === other) return true
-            if (javaClass != other?.javaClass) return false
-
-            other as Node
-
-            if (x != other.x) return false
-            if (y != other.y) return false
-
-            return true
-        }
-
-        override fun hashCode(): Int {
-            var result = x
-            result = 31 * result + y
-            return result
-        }
-    }
-
-    fun dijkstra(x: Int, y: Int) {
-        val u = data[y][x]
-
-        val neighbor = u.getNeighbor().apply {
-            for (node in this) {
-                val distanceFromU = node.weight + u.distance
-
-                if (node.distance > distanceFromU) {
-                    node.distance = distanceFromU
-                    node.prev = u
-                }
-            }
-        }
-        val waitQueue = PriorityQueue<Node> { n1, n2 -> n1.weight.compareTo(n2.weight) }.apply { addAll(neighbor) }
-
-        while (waitQueue.isNotEmpty()) {
-            val v = waitQueue.poll()
-            u.explored = true
-            dijkstra(v.x, v.y)
-        }
+    override fun toString(): String {
+        return "x: $x, energy:  $energy, prevX: $prevX"
     }
 }
