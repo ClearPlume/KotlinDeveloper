@@ -11,10 +11,10 @@ const val OUT = "out"
 
 val validCommands = arrayOf(IN, OUT)
 
-val <T> Array<Array<T>>.row: Int
+val <T> ArrayList<ArrayList<T>>.row: Int
     get() = size
 
-val <T> Array<Array<T>>.col: Int
+val <T> ArrayList<ArrayList<T>>.col: Int
     get() = this[0].size
 
 fun main(args: Array<String>) {
@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
     // img [After] operation
     val imgA = BufferedImage(img.width, img.height, BufferedImage.TYPE_INT_RGB)
 
-    seam(img, imgA)
+    seam(img, imgA, true)
 
     ImageIO.write(imgA, "png", File(commands[OUT]!!))
 }
@@ -47,6 +47,30 @@ fun Array<String>.parse(): Map<String, String> {
     return commands
 }
 
+inline fun <T> ArrayList<ArrayList<T>>.init(row: Int, col: Int, ele: () -> T): ArrayList<ArrayList<T>> {
+    repeat(row) {
+        val rowArr = ArrayList<T>()
+        repeat(col) {
+            rowArr.add(ele())
+        }
+        add(rowArr)
+    }
+
+    return this
+}
+
+fun <T> ArrayList<ArrayList<T>>.transposed(): ArrayList<ArrayList<T>> {
+    val transposed = ArrayList<ArrayList<T>>(row).init(col, row) { Any() as T }
+
+    for (row in 0 until row) {
+        for (col in 0 until col) {
+            transposed[col][row] = this[row][col]
+        }
+    }
+
+    return transposed
+}
+
 inline fun BufferedImage.exec(operation: (Int, Int, Color) -> Unit) {
     for (y in 0 until height) {
         for (x in 0 until width) {
@@ -55,8 +79,11 @@ inline fun BufferedImage.exec(operation: (Int, Int, Color) -> Unit) {
     }
 }
 
-fun BufferedImage.energies(): Array<Array<Double>> {
-    val energies = Array(height) { Array(width) { 0.0 } }
+/**
+ * @param horizontal 如果是水平，转置能量数组
+ */
+fun BufferedImage.energies(horizontal: Boolean = false): ArrayList<ArrayList<Double>> {
+    val energies = ArrayList<ArrayList<Double>>().init(height, width) { 0.0 }
 
     exec { x, y, _ ->
         val xL: Int
@@ -106,7 +133,11 @@ fun BufferedImage.energies(): Array<Array<Double>> {
         energies[y][x] = energy
     }
 
-    return energies
+    return if (horizontal) {
+        energies.transposed()
+    } else {
+        energies
+    }
 }
 
 operator fun BufferedImage.get(x: Int, y: Int): Color {
@@ -148,9 +179,12 @@ fun energies(img: BufferedImage, imgA: BufferedImage) {
     }
 }
 
-fun seam(img: BufferedImage, imgA: BufferedImage) {
-    val energies = img.energies()
-    val seamEnergies = Array(energies.row) { Array(energies.col) { SeamEnergyWithBackPointer() } }
+fun seam(img: BufferedImage, imgA: BufferedImage, horizontal: Boolean = false) {
+    val energies = img.energies(horizontal)
+    val seamEnergies = ArrayList<ArrayList<SeamEnergyWithBackPointer>>().init(
+        energies.row,
+        energies.col
+    ) { SeamEnergyWithBackPointer() }
     img.exec { x, y, color -> imgA[x, y] = color }
 
     for (col in energies[0].indices) {
@@ -172,15 +206,15 @@ fun seam(img: BufferedImage, imgA: BufferedImage) {
                 col + 1
             }
 
-            val prevRowSeams = mutableMapOf<Int, Double>()
+            val prevRowSeams = mutableMapOf<Pair<Int, Int>, Double>()
 
             for (i in left..right) {
-                prevRowSeams[i] = seamEnergies[row - 1][i].energy + energies[row][col]
+                prevRowSeams[i to row] = seamEnergies[row - 1][i].energy + energies[row][col]
             }
 
             val backPointer = prevRowSeams.minByOrNull { it.value }!!
             seamEnergies[row][col].energy = backPointer.value
-            seamEnergies[row][col].prevX = backPointer.key
+            seamEnergies[row][col].prevX = if (horizontal) backPointer.key.first else backPointer.key.second
             seamEnergies[row][col].x = col
         }
     }
@@ -188,14 +222,25 @@ fun seam(img: BufferedImage, imgA: BufferedImage) {
     var seam = seamEnergies.last().minByOrNull { it.energy }!!
     var row = energies.row - 1
 
-    do {
-        imgA[seam.x, row--] = Color.RED
-        seam = if (row < 0) {
-            seamEnergies[0][seam.x]
-        } else {
-            seamEnergies[row][seam.prevX]
-        }
-    } while (row >= 0)
+    if (horizontal) {
+        do {
+            imgA[row--, seam.x] = Color.RED
+            seam = if (row < 0) {
+                seamEnergies[0][seam.x]
+            } else {
+                seamEnergies[row][seam.prevX]
+            }
+        } while (row >= 0)
+    } else {
+        do {
+            imgA[seam.x, row--] = Color.RED
+            seam = if (row < 0) {
+                seamEnergies[0][seam.x]
+            } else {
+                seamEnergies[row][seam.prevX]
+            }
+        } while (row >= 0)
+    }
 }
 
 class SeamEnergyWithBackPointer {
