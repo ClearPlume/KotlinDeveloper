@@ -1,0 +1,15 @@
+type: code
+files:
+- name: src/Main.kt
+  visible: true
+  text: |-
+    fun solution(numbers1: Set<Int>, numbers2: Set<Int>): Int {
+        // put your code here
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/11296#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Wed, 19 May 2021 14:41:10 UTC
+record: -1
